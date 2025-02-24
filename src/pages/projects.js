@@ -33,16 +33,8 @@ const MovingImg = ({ title, img, link }) => {
   }
   return (
     <>
-      <Link
-        href={link}
-        target={"_blank"}
-        className="relative"
-        onMouseMove={handleMouse}
-        onMouseLeave={handleMouseLeave}
-      >
-        <h2 className="capitalize text-xl font-semibold hover:underline dark:text-light md:text-lg xs:text-base sm:self-start">
-          {title}
-        </h2>
+      <Link href={link} target={"_blank"} className="relative" onMouseMove={handleMouse} onMouseLeave={handleMouseLeave}>
+        <h2 className="capitalize text-xl font-semibold hover:underline dark:text-light md:text-lg xs:text-base sm:self-start">{title}</h2>
         <FramerImage
           src={img}
           ref={imgRef}
@@ -85,15 +77,7 @@ const Article = ({ img, title, date, link }) => {
   );
 };
 
-const FeaturedProject = ({
-  type,
-  title,
-  summary,
-  img,
-  link,
-  github,
-  tools,
-}) => {
+const FeaturedProject = ({ type, title, summary, img, link, github, tools }) => {
   return (
     <article
       className="relative flex w-full items-center  justify-between rounded-3xl rounded-br-2xl border
@@ -107,10 +91,7 @@ lg:p-8 xs:rounded-2xl  xs:rounded-br-3xl xs:p-4
         xs:rounded-[1.5rem] "
       />
 
-      <Link
-        href={link}
-        className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full"
-      >
+      <Link href={link} className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full">
         <FramerImage
           src={img}
           className="h-auto w-full object-cover"
@@ -124,27 +105,14 @@ lg:p-8 xs:rounded-2xl  xs:rounded-br-3xl xs:p-4
         />
       </Link>
       <div className="flex w-1/2 flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
-        <span className="text-xl font-medium text-primary dark:text-light xs:text-base">
-          {type}
-        </span>
-        <span className="text-xl font-medium text-primaryDark dark:text-primaryDark xs:text-base">
-          {tools}
-        </span>
+        <span className="text-xl font-medium text-primary dark:text-light xs:text-base">{type}</span>
+        <span className="text-xl font-medium text-primaryDark dark:text-primaryDark xs:text-base">{tools}</span>
         <Link href={link} className="underline-offset-2 hover:underline">
-          <h2 className="my-2 w-full text-left text-4xl font-bold lg:text-3xl xs:text-2xl">
-            {title}
-          </h2>
+          <h2 className="my-2 w-full text-left text-4xl font-bold lg:text-3xl xs:text-2xl">{title}</h2>
         </Link>
-        <p className=" my-2 rounded-md font-medium text-dark dark:text-light sm:text-sm">
-          {summary}
-        </p>
+        <p className=" my-2 rounded-md font-medium text-dark dark:text-light sm:text-sm">{summary}</p>
         <div className="mt-2 flex items-center">
-          <Link
-            href={github}
-            target={"_blank"}
-            className="w-10"
-            aria-label="github link"
-          >
+          <Link href={github} target={"_blank"} className="w-10" aria-label="github link">
             <GithubIcon />
           </Link>
           <Link
@@ -179,10 +147,7 @@ const Project = ({ title, type, img, link, tools }) => {
         xs:rounded-[1.5rem]"
       />
 
-      <Link
-        href={link}
-        className="w-full cursor-pointer overflow-hidden rounded-lg"
-      >
+      <Link href={link} className="w-full cursor-pointer overflow-hidden rounded-lg">
         <FramerImage
           src={img}
           alt={title}
@@ -195,17 +160,11 @@ const Project = ({ title, type, img, link, tools }) => {
         />
       </Link>
       <div className="mt-4 flex w-full flex-col items-start justify-between">
-        <span className="text-xl font-medium text-primary dark:text-light lg:text-lg md:text-base">
-          {type}
-        </span>
-        <span className="text-xl font-medium text-primaryDark dark:text-primaryDark xs:text-base">
-          {tools}
-        </span>
+        <span className="text-xl font-medium text-primary dark:text-light lg:text-lg md:text-base">{type}</span>
+        <span className="text-xl font-medium text-primaryDark dark:text-primaryDark xs:text-base">{tools}</span>
 
         <Link href={link} className="underline-offset-2 hover:underline">
-          <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl ">
-            {title}
-          </h2>
+          <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl ">{title}</h2>
         </Link>
         <div className="flex w-full items-center  justify-between">
           <Link
@@ -231,22 +190,14 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Projects | By NexTemp</title>
-        <meta
-          name="description"
-          content="NexTemp, A open-source portfolio theme built with Nextjs"
-        />
+        <title>Projects | By ShreesatPortfolio</title>
+        <meta name="description" content="ShreesatPortfolio, A open-source portfolio theme built with Nextjs" />
       </Head>
 
       <TransitionEffect />
-      <main
-        className={`mb-16  flex w-full flex-col items-center justify-center dark:text-light`}
-      >
+      <main className={`mb-16  flex w-full flex-col items-center justify-center dark:text-light`}>
         <Layout className="pt-16">
-          <AnimatedText
-            text="Imagination Transforms the World ✨"
-            className="mb-16 !text-8xl !leading-tight lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
-          />
+          <AnimatedText text="Imagination Transforms the World ✨" className="mb-16 !text-8xl !leading-tight lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl" />
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
@@ -261,38 +212,16 @@ export default function Projects() {
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
-              <Project
-                type="Design & Development"
-                tools="HTML | CSS | JavaScript | Gatsby"
-                title="Clay - Gatsby Theme"
-                img={proj1}
-                date="2023"
-                link="/projects/clay-gatsby-theme"
-                github="https://travislord.xyz/projects/clay-gatsby-theme"
-              />
+              <Project type="Design & Development" tools="HTML | CSS | JavaScript | Gatsby" title="Clay - Gatsby Theme" img={proj1} date="2023" link="/projects/clay-gatsby-theme" github="https://travislord.xyz/projects/clay-gatsby-theme" />
             </div>
             <div className="col-span-6 sm:col-span-12">
-              <Project
-                type="Design & Development"
-                tools="HTML | CSS | JavaScript | Gatsby"
-                title="Clay - Gatsby Theme"
-                img={proj1}
-                date="2023"
-                link="/projects/clay-gatsby-theme"
-                github="https://travislord.xyz/projects/clay-gatsby-theme"
-              />
+              <Project type="Design & Development" tools="HTML | CSS | JavaScript | Gatsby" title="Clay - Gatsby Theme" img={proj1} date="2023" link="/projects/clay-gatsby-theme" github="https://travislord.xyz/projects/clay-gatsby-theme" />
             </div>
           </div>
 
           <div>
             <ul className="flex flex-col items-center relative pt-16">
-              <Article
-                title="Adding more soon, thanks for the interest!"
-                img={loading}
-                time="1 min read"
-                date=""
-                link="https://github.com/lilxyzz/"
-              />
+              <Article title="Adding more soon, thanks for the interest!" img={loading} time="1 min read" date="" link="https://github.com/lilxyzz/" />
             </ul>
 
             <div className="mt-2 flex items-center justify-between gap-3 grid-cols-2">

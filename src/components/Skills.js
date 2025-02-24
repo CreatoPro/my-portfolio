@@ -24,9 +24,7 @@ const Skills = () => {
   const ref = useRef(null);
   return (
     <>
-      <h2 className="font-bold text-8xl mt-64 w-full text-center md:text-6xl md:mt-32">
-        Skills
-      </h2>
+      <h2 className="font-bold text-8xl mt-64 w-full text-center md:text-6xl md:mt-32">Skills</h2>
       <div
         ref={ref}
         className="w-full h-[100vh] relative bg-circularLight dark:bg-circularDark  flex items-center justify-center 
@@ -41,7 +39,7 @@ const Skills = () => {
         dark:bg-light dark:text-dark lg:p-6 md:p-4 xs:text-xs xs:p-2
         "
         >
-          Web
+          Web &<br /> Mobile
         </motion.div>
 
         <Skill name="HTML" x="-20vw" y="2vw" />
@@ -49,12 +47,13 @@ const Skills = () => {
         <Skill name="JavaScript" x="20vw" y="6vw" />
         <Skill name="TypeScript" x="0vw" y="12vw" />
         <Skill name="Next.js" x="-20vw" y="-15vw" />
-        <Skill name="Gatsby" x="15vw" y="-12vw" />
+        <Skill name="AWS" x="15vw" y="-12vw" />
         <Skill name="Git" x="-35vw" y="-5vw" />
         <Skill name="UI / UX" x="32vw" y="-5vw" />
         <Skill name="Node.js" x="0vw" y="-20vw" />
         <Skill name="React" x="-25vw" y="18vw" />
-        <Skill name="Framer Motion" x="28vw" y="18vw" />
+        <Skill name="React Native" x="28vw" y="18vw" />
+        <Skill name="Flutter" x="0vw" y="21vw" />
       </div>
     </>
   );
