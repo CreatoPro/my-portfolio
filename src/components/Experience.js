@@ -6,23 +6,12 @@ import Link from "next/link";
 const Details = ({ position, company, companyLink, time, address, work }) => {
   const ref = useRef(null);
   return (
-    <li
-      ref={ref}
-      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-start justify-between md:w-[80%]"
-    >
+    <li ref={ref} className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-start justify-between md:w-[80%]">
       <LiIcon reference={ref} />
-      <motion.div
-        initial={{ y: 50 }}
-        whileInView={{ y: 0 }}
-        transition={{ duration: 0.5, type: "spring" }}
-      >
+      <motion.div initial={{ y: 50 }} whileInView={{ y: 0 }} transition={{ duration: 0.5, type: "spring" }}>
         <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">
           {position}{" "}
-          <a
-            className="capitalize text-slideGreen dark:text-primaryDark"
-            href={companyLink}
-            target={"_blank"}
-          >
+          <a className="capitalize text-slideGreen dark:text-primaryDark" href={companyLink} target={"_blank"}>
             @{company}
           </a>
         </h3>
@@ -45,9 +34,7 @@ const Experience = () => {
 
   return (
     <div className="my-64">
-      <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16">
-        Experience
-      </h2>
+      <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16">Experience</h2>
 
       <div ref={ref} className="relative w-[75%] mx-auto lg:w-[90%] md:w-full">
         <motion.div
@@ -58,21 +45,39 @@ const Experience = () => {
 
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
-            position="Developer"
-            company="Stellar Innovations"
-            time="2020 - 2024"
-            address="200 Innovations st"
-            companyLink="https://github.com/lilxyzz/clay-theme"
-            work="At Stellar Innovations, I serve as a web developer, where I play a crucial role in designing and implementing cutting-edge web solutions. My responsibilities include developing responsive and high-performance websites and applications using technologies such as HTML, CSS, JavaScript, React, and Node.js. I collaborate closely with cross-functional teams to ensure our projects meet the highest standards of functionality and user experience. One of my key achievements at Stellar Innovations has been leading the development of a comprehensive e-commerce platform that significantly enhanced our client's online presence and sales. My work is driven by a passion for continuous learning and innovation, always striving to push the boundaries of what's possible in web development."
+            position="Software Developer"
+            company="IIG Technology"
+            time="Dec 2024 - Present"
+            address="Bhubaneswar, Odisha"
+            companyLink="https://iigtechnology.in/"
+            work="At IIG Technology, I work as a Software Developer, contributing to the design and development of scalable web and mobile applications. My role involves architecting efficient backend systems, optimizing database performance, and ensuring seamless API integrations. I collaborate with cross-functional teams to enhance system performance and solve complex technical challenges. Working with technologies like React, Next.js, Node.js, Laravel, and MongoDB, I focus on building high-performance applications. One of my key contributions has been optimizing existing codebases, reducing load times, and improving overall system efficiency. My passion for problem-solving and continuous learning drives me to explore innovative solutions and stay ahead in the ever-evolving tech landscape."
           />
 
           <Details
-            position="Rad Tester"
-            company="Vault Technologies"
-            time="2018 - 2020"
-            address="404 Tech st"
-            companyLink="https://github.com/lilxyzz/holo-theme"
-            work="At Vault Technologies, I worked as a RAD (Rapid Application Development) Tester, where I was responsible for ensuring the quality and functionality of our software applications during the development process. My role involved designing and executing test plans, identifying and documenting bugs, and working closely with developers to resolve issues quickly. This position required a deep understanding of the software development lifecycle and a keen eye for detail to ensure our applications met the highest standards of performance and reliability. My contributions at Vault Technologies helped streamline our development processes and significantly improved the overall quality of our software products."
+            position="Assistant Manager"
+            company="Allen Digital"
+            time="Jan 2023 - Dec 2024"
+            address="Kota, Rajasthan"
+            companyLink="https://allen.in/"
+            work="At Allen Digital, I played a key role in developing and maintaining their digital platforms. Initially, I worked on the Allen Digital Platform, which was built using React, ensuring seamless performance and user experience. I then transitioned to Allen Next, a Next.js-based project where I leveraged Tailwind CSS and Vercel for optimized performance and scalability. My contributions extended beyond development and then I led the implementation of Allen E-Store, a major e-commerce initiative built on Shopify, streamlining the online sales process. Additionally, I worked extensively on their ERP systems, optimizing workflows and improving operational efficiency. My expertise also contributed to a high-priority project in Bangalore, where I collaborated with cross-functional teams to deliver impactful digital solutions."
+          />
+
+          <Details
+            position="Assistant Manager"
+            company="Allen Digital"
+            time="June 2022 - Dec 2022"
+            address="Hyderabad, Telangana"
+            companyLink="https://allen.in/"
+            work="At Allen Digital, I was the first hire at their Hyderabad office, playing a pivotal role in both technical and operational aspects. I worked on their POC project, developing a React Native and Node.js-based platform, where I led the implementation of AWS IVS (Interactive Video Service) for seamless video streaming. Additionally, I contributed to the development of their online video consultation system, ensuring smooth integration and user experience. Beyond my technical responsibilities, I managed office operations, coordinated directly with HR from Kota for onboarding new team members, and helped establish a productive work environment in Hyderabad. My role required a blend of leadership, problem-solving, and technical expertise to drive the success of Allen Digital's expansion."
+          />
+
+          <Details
+            position="SMM and Web Dev Intern"
+            company="IIG Varsity"
+            time="May 2021 - Sept 2021"
+            address="Bhubaneswar, Odisha"
+            companyLink="https://www.iigvarsity.com/"
+            work="As a Social Media Marketing (SMM) and Web Development Intern at IIG Varsity, I managed both paid and organic social media campaigns to enhance brand visibility. I worked on their existing website, optimizing it for better user engagement. Additionally, I designed and developed a new WordPress-based website, focusing on a visually appealing and user-friendly experience. Although the site didn’t go live, it was well-received for its design-centric approach. This role allowed me to blend my marketing and technical skills, gaining hands-on experience in digital outreach and web development."
           />
         </ul>
       </div>

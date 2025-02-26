@@ -45,7 +45,7 @@ export default function About() {
       <TransitionEffect />
       <main className={`flex  w-full flex-col items-center justify-center dark:text-light`}>
         <Layout className="pt-16">
-          <AnimatedText text="Let Passion Lead Your Purpose 🔥" className="mb-16 !text-8xl !leading-tight lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8" />
+          <AnimatedText text="Building the Future, One Line at a Time 🚀" className="mb-16 !text-8xl !leading-tight lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8" />
 
           <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
             <div
@@ -53,16 +53,15 @@ export default function About() {
             md:col-span-8"
             >
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">BIOGRAPHY</h2>
-              <p className="font-medium ">
-                I'm Riley, a dedicated web developer at Stellar Innovations, where I specialize in creating dynamic and user-centric web experiences. With over a decade of experience in the industry, I have honed my skills in both front-end and back-end technologies, allowing me to deliver
-                responsive and high-performance websites and applications.
+              <p className="font-medium">
+                I'm Shreesat, a passionate software developer with expertise in both web and mobile development. I specialize in building seamless user experiences using React, Next.js, and Flutter, along with backend technologies like Node.js, Express, and MongoDB. My work focuses on crafting
+                high-performance applications that are both scalable and intuitive.
               </p>
               <p className="my-4 font-medium">
-                At Stellar Innovations, I've had the opportunity to work on numerous high-profile projects that have challenged and expanded my expertise. My technical skill set includes HTML, CSS, JavaScript, React, and Node.js, among other technologies. One of my notable projects involved
-                developing a comprehensive e-commerce platform that streamlined the user experience and significantly boosted the client's sales. Another project I’m particularly proud of was creating an interactive web application for a major event, which received widespread acclaim for its
-                intuitive design and seamless performance.
+                Throughout my career, I have worked on a variety of projects, from creating dynamic web platforms to developing mobile applications that enhance user engagement. One of my key projects involved optimizing a large-scale system for better efficiency and scalability, while another
+                focused on building a feature-rich mobile app with real-time interactions. I am constantly learning and pushing my boundaries to stay ahead in the ever-evolving tech landscape.
               </p>
-              <p className="my-4 font-medium">P.s I'm a big fan of anime and not a real person ✌️.</p>
+              <p className="my-4 font-medium">P.S. When I'm not coding, I’m creating content for my YouTube channel and exploring new tech trends. 🚀</p>
             </div>
             <div
               className="relative col-span-3 h-max rounded-2xl border-2 border-solid border-dark 
@@ -87,44 +86,45 @@ export default function About() {
             </div>
             <div
               className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row 
-            xl:items-center md:order-3"
+md:order-3 xl:items-center"
             >
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                  <AnimatedNumberFramerMotion value={1461} />+
+                  <AnimatedNumberFramerMotion value={1500} />+
                 </span>
                 <h3
                   className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
-                xl:text-center md:text-lg sm:text-base xs:text-sm"
+xl:text-center md:text-lg sm:text-base xs:text-sm"
                 >
-                  Days of Coding
+                  Hours of Code Written
                 </h3>
               </div>
 
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                  <AnimatedNumberFramerMotion value={500} />
+                  <AnimatedNumberFramerMotion value={200} />+
                 </span>
                 <h3
                   className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
-                xl:text-center md:text-lg sm:text-base xs:text-sm"
+xl:text-center md:text-lg sm:text-base xs:text-sm"
                 >
-                  Bugs Made
+                  Features Shipped
                 </h3>
               </div>
 
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                  <AnimatedNumberFramerMotion value={499} />
+                  <AnimatedNumberFramerMotion value={100} />+
                 </span>
                 <h3
                   className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
-                xl:text-center md:text-lg sm:text-base xs:text-sm"
+xl:text-center md:text-lg sm:text-base xs:text-sm"
                 >
-                  Bugs Crushed
+                  Debugging Sessions
                 </h3>
               </div>
             </div>
+
             <HireMe2 />
           </div>
 
