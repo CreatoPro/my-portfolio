@@ -9,6 +9,7 @@ import Experience from "@/components/Experience";
 import AnimatedText from "@/components/AnimatedText";
 import TransitionEffect from "@/components/TransitionEffect";
 import { HireMe2 } from "@/components/HireMe2";
+import Link from "next/link";
 
 function AnimatedNumberFramerMotion({ value }) {
   const ref = useRef(null);
@@ -61,7 +62,9 @@ export default function About() {
                 Throughout my career, I have worked on a variety of projects, from creating dynamic web platforms to developing mobile applications that enhance user engagement. One of my key projects involved optimizing a large-scale system for better efficiency and scalability, while another
                 focused on building a feature-rich mobile app with real-time interactions. I am constantly learning and pushing my boundaries to stay ahead in the ever-evolving tech landscape.
               </p>
-              <p className="my-4 font-medium">P.S. When I'm not coding, I’m creating content for my YouTube channel and exploring new tech trends. 🚀</p>
+              <p className="my-4 font-medium">
+                P.S. When I'm not coding, I’m creating content for my <Link href="www.youtube.com/@shreesat">YouTube channel 🟥</Link> and exploring new tech trends. 🚀
+              </p>
             </div>
             <div
               className="relative col-span-3 h-max rounded-2xl border-2 border-solid border-dark 

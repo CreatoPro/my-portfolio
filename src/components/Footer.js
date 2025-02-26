@@ -15,13 +15,10 @@ const Footer = () => {
         <div className="flex items-center lg:py-2 ml-2">
           Built <span className="text-2xl px-1"></span>
           {""}
-          by&nbsp;
-          <Link
-            href="https://travislord.xyz/"
-            className="underline underline-offset-2"
-          >
+          with &nbsp;❤️
+          {/* <Link href="https://travislord.xyz/" className="underline underline-offset-2">
             Travis Lord
-          </Link>
+          </Link> */}
         </div>
       </Layout>
     </footer>
