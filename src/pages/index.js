@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import TransitionEffect from "@/components/TransitionEffect";
 import profilePic from "../../public/images/profile/Riley.png";
+import LatestXPost from "@/components/LatestXPost";
 
 export default function Home() {
   return (
@@ -61,7 +62,10 @@ export default function Home() {
           </div>
         </Layout>
         <div className="fixed right-8 bottom-8 inline-block md:hidden">
-          <iframe className="iframe" title="Noongar Seasonal Calendar" width="280" height="120" src="https://seasonal-au.netlify.app/" frameborder="0" allowfullscreen></iframe>
+          {/* <iframe className="iframe" title="Noongar Seasonal Calendar" width="280" height="120" src="https://seasonal-au.netlify.app/" frameborder="0" allowfullscreen></iframe> */}
+          <iframe className="iframe" title="GitHub Contributions" width="280" height="120" src="https://ghchart.rshah.org/gaearon" frameborder="0" allowfullscreen></iframe>
+          {/* <iframe className="w-full h-40 rounded-md" src="https://www.youtube.com/embed?listType=user_uploads&list=UCwihQJIVn-6Qus5Z92zVDoQ" frameBorder="0" allowFullScreen></iframe> */}
+          {/* <LatestXPost /> */}
         </div>
         <HireMe />
       </article>

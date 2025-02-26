@@ -1,27 +1,11 @@
 import * as React from "react";
 
 export const GithubIcon = ({ className, ...rest }) => (
-  <svg
-    viewBox="-2.4 -2.4 28.80 28.80"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
+  <svg viewBox="-2.4 -2.4 28.80 28.80" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g id="SVGRepo_bgCarrier" stroke-width="0">
-      <rect
-        x="-2.4"
-        y="-2.4"
-        width="28.80"
-        height="28.80"
-        rx="14.4"
-        fill="#f5f5f5"
-        strokewidth="0"
-      ></rect>
+      <rect x="-2.4" y="-2.4" width="28.80" height="28.80" rx="14.4" fill="#f5f5f5" strokewidth="0"></rect>
     </g>
-    <g
-      id="SVGRepo_tracerCarrier"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    ></g>
+    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
     <g id="SVGRepo_iconCarrier">
       {" "}
       <path
@@ -35,14 +19,7 @@ export const GithubIcon = ({ className, ...rest }) => (
 );
 
 export const TwitterIcon = ({ className, ...rest }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    viewBox="0 0 256 209"
-    {...rest}
-    className={`w-full h-auto ${className}`}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 209" {...rest} className={`w-full h-auto ${className}`}>
     <path fill="none" d="M0 0h256v209H0z" />
     <path
       fill="#55acee"
@@ -50,29 +27,26 @@ export const TwitterIcon = ({ className, ...rest }) => (
     />
   </svg>
 );
-
-export const LinkedInIcon = ({ className, ...rest }) => (
-  <svg
-    viewBox="-2.4 -2.4 28.80 28.80"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
+export const XIcon = ({ className, ...rest }) => (
+  <svg viewBox="-2.4 -2.4 28.80 28.80" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g id="SVGRepo_bgCarrier" stroke-width="0">
-      <rect
-        x="-2.4"
-        y="-2.4"
-        width="28.80"
-        height="28.80"
-        rx="14.4"
-        fill="#f5f5f5"
-        strokewidth="0"
-      ></rect>
+      <rect x="-2.4" y="-2.4" width="28.80" height="28.80" rx="14.4" fill="#f5f5f5" strokewidth="0"></rect>
     </g>
-    <g
-      id="SVGRepo_tracerCarrier"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    ></g>
+    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+    <g id="SVGRepo_iconCarrier">
+      <path
+        fill="#000000"
+        d="M 2.3671875 3 L 9.4628906 13.140625 L 2.7402344 21 L 5.3808594 21 L 10.644531 14.830078 L 14.960938 21 L 21.871094 21 L 14.449219 10.375 L 20.740234 3 L 18.140625 3 L 13.271484 8.6875 L 9.2988281 3 L 2.3671875 3 z M 6.2070312 5 L 8.2558594 5 L 18.033203 19 L 16.001953 19 L 6.2070312 5 z"
+      ></path>
+    </g>
+  </svg>
+);
+export const LinkedInIcon = ({ className, ...rest }) => (
+  <svg viewBox="-2.4 -2.4 28.80 28.80" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g id="SVGRepo_bgCarrier" stroke-width="0">
+      <rect x="-2.4" y="-2.4" width="28.80" height="28.80" rx="14.4" fill="#f5f5f5" strokewidth="0"></rect>
+    </g>
+    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
     <g id="SVGRepo_iconCarrier">
       {" "}
       <path
@@ -84,14 +58,7 @@ export const LinkedInIcon = ({ className, ...rest }) => (
 );
 
 export const PinterestIcon = ({ className, ...rest }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    viewBox="0 0 256 256"
-    {...rest}
-    className={`w-full h-auto ${className}`}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256" {...rest} className={`w-full h-auto ${className}`}>
     <path fill="none" d="M0 0h256v256H0z" />
     <path
       fill="#CB1F27"
@@ -101,19 +68,9 @@ export const PinterestIcon = ({ className, ...rest }) => (
 );
 
 export const DribbbleIcon = ({ className, ...rest }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    viewBox="0 0 256 256"
-    {...rest}
-    className={`w-full h-auto ${className}`}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256" {...rest} className={`w-full h-auto ${className}`}>
     <path fill="none" d="M0 0h256v256H0z" />
-    <path
-      fill="#E74D89"
-      d="M128 8.5c66 0 119.4 53.4 119.4 119.3S194 247.2 128 247.2 8.6 193.8 8.6 127.9 62 8.5 128 8.5Z"
-    />
+    <path fill="#E74D89" d="M128 8.5c66 0 119.4 53.4 119.4 119.3S194 247.2 128 247.2 8.6 193.8 8.6 127.9 62 8.5 128 8.5Z" />
     <path
       fill="#B2215A"
       d="M128 255.7c-70.6 0-128-57.3-128-127.8C0 57.3 57.4 0 128 0s128 57.3 128 127.8-57.4 127.9-128 127.9Zm107.9-110.4c-3.7-1.2-33.8-10.1-68.1-4.7 14.3 39.2 20.1 71.2 21.2 77.8 24.6-16.5 42.1-42.7 46.9-73.1Zm-65.2 83.2c-1.6-9.6-8-43-23.3-82.8-.2.1-.5.2-.7.2-61.7 21.5-83.8 64.2-85.8 68.2 18.5 14.4 41.8 23 67.1 23 15.1.1 29.6-3 42.7-8.6ZM46.8 201c2.5-4.2 32.5-53.8 88.9-72.1 1.4-.5 2.9-.9 4.3-1.3-2.7-6.2-5.7-12.4-8.9-18.5-54.6 16.3-107.6 15.6-112.4 15.5 0 1.1-.1 2.2-.1 3.3.1 28.1 10.7 53.7 28.2 73.1ZM21 105.6c4.9.1 49.9.3 101.1-13.3C104 60.1 84.4 33.1 81.6 29.2 50.9 43.6 28.1 71.8 21 105.6Zm81.4-83.8c3 4 22.9 31 40.8 63.9 38.9-14.6 55.3-36.6 57.3-39.4-19.3-17.1-44.7-27.5-72.5-27.5-8.8 0-17.4 1.1-25.6 3Zm110.2 37.1c-2.3 3.1-20.6 26.6-61 43.1 2.5 5.2 5 10.5 7.3 15.8.8 1.9 1.6 3.8 2.4 5.6 36.4-4.6 72.5 2.8 76.1 3.5-.3-25.7-9.5-49.4-24.8-68Z"
@@ -122,367 +79,110 @@ export const DribbbleIcon = ({ className, ...rest }) => (
 );
 
 export const SunIcon = ({ className, ...rest }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    {...rest}
-    className={`w-full h-auto ${className}`}
-  >
-    <g
-      fill="none"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth="2"
-    >
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" {...rest} className={`w-full h-auto ${className}`}>
+    <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2">
       <g strokeDasharray="2">
         <path d="M12 21v1M21 12h1M12 3v-1M3 12h-1">
-          <animate
-            fill="freeze"
-            attributeName="stroke-dashoffset"
-            dur="0.2s"
-            values="4;2"
-          />
+          <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.2s" values="4;2" />
         </path>
         <path d="M18.5 18.5l0.5 0.5M18.5 5.5l0.5 -0.5M5.5 5.5l-0.5 -0.5M5.5 18.5l-0.5 0.5">
-          <animate
-            fill="freeze"
-            attributeName="stroke-dashoffset"
-            begin="0.2s"
-            dur="0.2s"
-            values="4;2"
-          />
+          <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.2s" dur="0.2s" values="4;2" />
         </path>
       </g>
-      <path
-        fill="currentColor"
-        d="M7 6 C7 12.08 11.92 17 18 17 C18.53 17 19.05 16.96 19.56 16.89 C17.95 19.36 15.17 21 12 21 C7.03 21 3 16.97 3 12 C3 8.83 4.64 6.05 7.11 4.44 C7.04 4.95 7 5.47 7 6 Z"
-        opacity="0"
-      >
+      <path fill="currentColor" d="M7 6 C7 12.08 11.92 17 18 17 C18.53 17 19.05 16.96 19.56 16.89 C17.95 19.36 15.17 21 12 21 C7.03 21 3 16.97 3 12 C3 8.83 4.64 6.05 7.11 4.44 C7.04 4.95 7 5.47 7 6 Z" opacity="0">
         <set attributeName="opacity" begin="0.5s" to="1" />
       </path>
     </g>
     <g fill="currentColor" fillOpacity="0">
       <path d="m15.22 6.03l2.53-1.94L14.56 4L13.5 1l-1.06 3l-3.19.09l2.53 1.94l-.91 3.06l2.63-1.81l2.63 1.81z">
-        <animate
-          id="lineMdSunnyFilledLoopToMoonFilledLoopTransition0"
-          fill="freeze"
-          attributeName="fill-opacity"
-          begin="0.6s;lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+6s"
-          dur="0.4s"
-          values="0;1"
-        />
-        <animate
-          fill="freeze"
-          attributeName="fill-opacity"
-          begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+2.2s"
-          dur="0.4s"
-          values="1;0"
-        />
+        <animate id="lineMdSunnyFilledLoopToMoonFilledLoopTransition0" fill="freeze" attributeName="fill-opacity" begin="0.6s;lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+6s" dur="0.4s" values="0;1" />
+        <animate fill="freeze" attributeName="fill-opacity" begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+2.2s" dur="0.4s" values="1;0" />
       </path>
       <path d="M13.61 5.25L15.25 4l-2.06-.05L12.5 2l-.69 1.95L9.75 4l1.64 1.25l-.59 1.98l1.7-1.17l1.7 1.17z">
-        <animate
-          fill="freeze"
-          attributeName="fill-opacity"
-          begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+3s"
-          dur="0.4s"
-          values="0;1"
-        />
-        <animate
-          fill="freeze"
-          attributeName="fill-opacity"
-          begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+5.2s"
-          dur="0.4s"
-          values="1;0"
-        />
+        <animate fill="freeze" attributeName="fill-opacity" begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+3s" dur="0.4s" values="0;1" />
+        <animate fill="freeze" attributeName="fill-opacity" begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+5.2s" dur="0.4s" values="1;0" />
       </path>
       <path d="M19.61 12.25L21.25 11l-2.06-.05L18.5 9l-.69 1.95l-2.06.05l1.64 1.25l-.59 1.98l1.7-1.17l1.7 1.17z">
-        <animate
-          fill="freeze"
-          attributeName="fill-opacity"
-          begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+0.4s"
-          dur="0.4s"
-          values="0;1"
-        />
-        <animate
-          fill="freeze"
-          attributeName="fill-opacity"
-          begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+2.8s"
-          dur="0.4s"
-          values="1;0"
-        />
+        <animate fill="freeze" attributeName="fill-opacity" begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+0.4s" dur="0.4s" values="0;1" />
+        <animate fill="freeze" attributeName="fill-opacity" begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+2.8s" dur="0.4s" values="1;0" />
       </path>
       <path d="m20.828 9.731l1.876-1.439l-2.366-.067L19.552 6l-.786 2.225l-2.366.067l1.876 1.439L17.601 12l1.951-1.342L21.503 12z">
-        <animate
-          fill="freeze"
-          attributeName="fill-opacity"
-          begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+3.4s"
-          dur="0.4s"
-          values="0;1"
-        />
-        <animate
-          fill="freeze"
-          attributeName="fill-opacity"
-          begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+5.6s"
-          dur="0.4s"
-          values="1;0"
-        />
+        <animate fill="freeze" attributeName="fill-opacity" begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+3.4s" dur="0.4s" values="0;1" />
+        <animate fill="freeze" attributeName="fill-opacity" begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+5.6s" dur="0.4s" values="1;0" />
       </path>
     </g>
     <mask id="lineMdSunnyFilledLoopToMoonFilledLoopTransition1">
       <circle cx="12" cy="12" r="12" fill="#fff" />
       <circle cx="22" cy="2" r="3" fill="#fff">
-        <animate
-          fill="freeze"
-          attributeName="cx"
-          begin="0.1s"
-          dur="0.4s"
-          values="22;18"
-        />
-        <animate
-          fill="freeze"
-          attributeName="cy"
-          begin="0.1s"
-          dur="0.4s"
-          values="2;6"
-        />
-        <animate
-          fill="freeze"
-          attributeName="r"
-          begin="0.1s"
-          dur="0.4s"
-          values="3;12"
-        />
+        <animate fill="freeze" attributeName="cx" begin="0.1s" dur="0.4s" values="22;18" />
+        <animate fill="freeze" attributeName="cy" begin="0.1s" dur="0.4s" values="2;6" />
+        <animate fill="freeze" attributeName="r" begin="0.1s" dur="0.4s" values="3;12" />
       </circle>
       <circle cx="22" cy="2" r="1">
-        <animate
-          fill="freeze"
-          attributeName="cx"
-          begin="0.1s"
-          dur="0.4s"
-          values="22;18"
-        />
-        <animate
-          fill="freeze"
-          attributeName="cy"
-          begin="0.1s"
-          dur="0.4s"
-          values="2;6"
-        />
-        <animate
-          fill="freeze"
-          attributeName="r"
-          begin="0.1s"
-          dur="0.4s"
-          values="1;10"
-        />
+        <animate fill="freeze" attributeName="cx" begin="0.1s" dur="0.4s" values="22;18" />
+        <animate fill="freeze" attributeName="cy" begin="0.1s" dur="0.4s" values="2;6" />
+        <animate fill="freeze" attributeName="r" begin="0.1s" dur="0.4s" values="1;10" />
       </circle>
     </mask>
-    <circle
-      cx="12"
-      cy="12"
-      r="6"
-      fill="currentColor"
-      mask="url(#lineMdSunnyFilledLoopToMoonFilledLoopTransition1)"
-    >
+    <circle cx="12" cy="12" r="6" fill="currentColor" mask="url(#lineMdSunnyFilledLoopToMoonFilledLoopTransition1)">
       <set attributeName="opacity" begin="0.5s" to="0" />
-      <animate
-        fill="freeze"
-        attributeName="r"
-        begin="0.1s"
-        dur="0.4s"
-        values="6;10"
-      />
+      <animate fill="freeze" attributeName="r" begin="0.1s" dur="0.4s" values="6;10" />
     </circle>
   </svg>
 );
 
 export const MoonIcon = ({ className, ...rest }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    {...rest}
-    className={`w-full h-auto ${className}`}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" {...rest} className={`w-full h-auto ${className}`}>
     <rect x="0" y="0" width="24" height="24" fill="rgba(255, 255, 255, 0)" />
-    <g
-      fill="none"
-      stroke="currentColor"
-      strokeDasharray="2"
-      strokeDashoffset="2"
-      strokeLinecap="round"
-      strokeWidth="2"
-    >
+    <g fill="none" stroke="currentColor" strokeDasharray="2" strokeDashoffset="2" strokeLinecap="round" strokeWidth="2">
       <path d="M0 0">
-        <animate
-          fill="freeze"
-          attributeName="d"
-          begin="1.2s"
-          dur="0.2s"
-          values="M12 19v1M19 12h1M12 5v-1M5 12h-1;M12 21v1M21 12h1M12 3v-1M3 12h-1"
-        />
-        <animate
-          fill="freeze"
-          attributeName="stroke-dashoffset"
-          begin="1.2s"
-          dur="0.2s"
-          values="2;0"
-        />
+        <animate fill="freeze" attributeName="d" begin="1.2s" dur="0.2s" values="M12 19v1M19 12h1M12 5v-1M5 12h-1;M12 21v1M21 12h1M12 3v-1M3 12h-1" />
+        <animate fill="freeze" attributeName="stroke-dashoffset" begin="1.2s" dur="0.2s" values="2;0" />
       </path>
       <path d="M0 0">
-        <animate
-          fill="freeze"
-          attributeName="d"
-          begin="1.5s"
-          dur="0.2s"
-          values="M17 17l0.5 0.5M17 7l0.5 -0.5M7 7l-0.5 -0.5M7 17l-0.5 0.5;M18.5 18.5l0.5 0.5M18.5 5.5l0.5 -0.5M5.5 5.5l-0.5 -0.5M5.5 18.5l-0.5 0.5"
-        />
-        <animate
-          fill="freeze"
-          attributeName="stroke-dashoffset"
-          begin="1.5s"
-          dur="1.2s"
-          values="2;0"
-        />
+        <animate fill="freeze" attributeName="d" begin="1.5s" dur="0.2s" values="M17 17l0.5 0.5M17 7l0.5 -0.5M7 7l-0.5 -0.5M7 17l-0.5 0.5;M18.5 18.5l0.5 0.5M18.5 5.5l0.5 -0.5M5.5 5.5l-0.5 -0.5M5.5 18.5l-0.5 0.5" />
+        <animate fill="freeze" attributeName="stroke-dashoffset" begin="1.5s" dur="1.2s" values="2;0" />
       </path>
-      <animateTransform
-        attributeName="transform"
-        dur="30s"
-        repeatCount="indefinite"
-        type="rotate"
-        values="0 12 12;360 12 12"
-      />
+      <animateTransform attributeName="transform" dur="30s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12" />
     </g>
     <g fill="currentColor">
       <path d="M15.22 6.03L17.75 4.09L14.56 4L13.5 1L12.44 4L9.25 4.09L11.78 6.03L10.87 9.09L13.5 7.28L16.13 9.09L15.22 6.03Z">
-        <animate
-          fill="freeze"
-          attributeName="fill-opacity"
-          dur="0.4s"
-          values="1;0"
-        />
+        <animate fill="freeze" attributeName="fill-opacity" dur="0.4s" values="1;0" />
       </path>
       <path d="M19.61 12.25L21.25 11L19.19 10.95L18.5 9L17.81 10.95L15.75 11L17.39 12.25L16.8 14.23L18.5 13.06L20.2 14.23L19.61 12.25Z">
-        <animate
-          fill="freeze"
-          attributeName="fill-opacity"
-          begin="0.2s"
-          dur="0.4s"
-          values="1;0"
-        />
+        <animate fill="freeze" attributeName="fill-opacity" begin="0.2s" dur="0.4s" values="1;0" />
       </path>
     </g>
-    <g
-      fill="currentColor"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth="2"
-    >
+    <g fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2">
       <path d="M7 6 C7 12.08 11.92 17 18 17 C18.53 17 19.05 16.96 19.56 16.89 C17.95 19.36 15.17 21 12 21 C7.03 21 3 16.97 3 12 C3 8.83 4.64 6.05 7.11 4.44 C7.04 4.95 7 5.47 7 6 Z" />
       <set attributeName="opacity" begin="0.6s" to="0" />
     </g>
     <mask id="lineMdMoonFilledToSunnyFilledLoopTransition0">
       <circle cx="12" cy="12" r="12" fill="#fff" />
       <circle cx="18" cy="6" r="12" fill="#fff">
-        <animate
-          fill="freeze"
-          attributeName="cx"
-          begin="0.6s"
-          dur="0.4s"
-          values="18;22"
-        />
-        <animate
-          fill="freeze"
-          attributeName="cy"
-          begin="0.6s"
-          dur="0.4s"
-          values="6;2"
-        />
-        <animate
-          fill="freeze"
-          attributeName="r"
-          begin="0.6s"
-          dur="0.4s"
-          values="12;3"
-        />
+        <animate fill="freeze" attributeName="cx" begin="0.6s" dur="0.4s" values="18;22" />
+        <animate fill="freeze" attributeName="cy" begin="0.6s" dur="0.4s" values="6;2" />
+        <animate fill="freeze" attributeName="r" begin="0.6s" dur="0.4s" values="12;3" />
       </circle>
       <circle cx="18" cy="6" r="10">
-        <animate
-          fill="freeze"
-          attributeName="cx"
-          begin="0.6s"
-          dur="0.4s"
-          values="18;22"
-        />
-        <animate
-          fill="freeze"
-          attributeName="cy"
-          begin="0.6s"
-          dur="0.4s"
-          values="6;2"
-        />
-        <animate
-          fill="freeze"
-          attributeName="r"
-          begin="0.6s"
-          dur="0.4s"
-          values="10;1"
-        />
+        <animate fill="freeze" attributeName="cx" begin="0.6s" dur="0.4s" values="18;22" />
+        <animate fill="freeze" attributeName="cy" begin="0.6s" dur="0.4s" values="6;2" />
+        <animate fill="freeze" attributeName="r" begin="0.6s" dur="0.4s" values="10;1" />
       </circle>
     </mask>
-    <circle
-      cx="12"
-      cy="12"
-      r="10"
-      fill="currentColor"
-      mask="url(#lineMdMoonFilledToSunnyFilledLoopTransition0)"
-      opacity="0"
-    >
+    <circle cx="12" cy="12" r="10" fill="currentColor" mask="url(#lineMdMoonFilledToSunnyFilledLoopTransition0)" opacity="0">
       <set attributeName="opacity" begin="0.6s" to="1" />
-      <animate
-        fill="freeze"
-        attributeName="r"
-        begin="0.6s"
-        dur="0.4s"
-        values="10;6"
-      />
+      <animate fill="freeze" attributeName="r" begin="0.6s" dur="0.4s" values="10;6" />
     </circle>
   </svg>
 );
 
 export const LinkArrow = ({ className, ...rest }) => (
-  <svg
-    width="1rem"
-    height="1rem"
-    viewBox="0 0 24.00 24.00"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    stroke="#ffffff"
-    stroke-width="0.00024000000000000003"
-  >
+  <svg width="1rem" height="1rem" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff" stroke-width="0.00024000000000000003">
     <g id="SVGRepo_bgCarrier" stroke-width="0">
-      <rect
-        x="0"
-        y="0"
-        width="24.00"
-        height="24.00"
-        rx="12"
-        fill="#f5f5f5"
-        strokewidth="0"
-      ></rect>
+      <rect x="0" y="0" width="24.00" height="24.00" rx="12" fill="#f5f5f5" strokewidth="0"></rect>
     </g>
-    <g
-      id="SVGRepo_tracerCarrier"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke="#f5f5f5"
-      stroke-width="0.576"
-    ></g>
+    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#f5f5f5" stroke-width="0.576"></g>
     <g id="SVGRepo_iconCarrier">
       {" "}
       <path
@@ -493,27 +193,11 @@ export const LinkArrow = ({ className, ...rest }) => (
   </svg>
 );
 export const MediumIcon = ({ className, ...rest }) => (
-  <svg
-    viewBox="-2.4 -2.4 28.80 28.80"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
+  <svg viewBox="-2.4 -2.4 28.80 28.80" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g id="SVGRepo_bgCarrier" stroke-width="0">
-      <rect
-        x="-2.4"
-        y="-2.4"
-        width="28.80"
-        height="28.80"
-        rx="14.4"
-        fill="#f5f5f5"
-        strokewidth="0"
-      ></rect>
+      <rect x="-2.4" y="-2.4" width="28.80" height="28.80" rx="14.4" fill="#f5f5f5" strokewidth="0"></rect>
     </g>
-    <g
-      id="SVGRepo_tracerCarrier"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    ></g>
+    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
     <g id="SVGRepo_iconCarrier">
       {" "}
       <path
@@ -527,27 +211,11 @@ export const MediumIcon = ({ className, ...rest }) => (
 );
 
 export const DevIcon = ({ className, ...rest }) => (
-  <svg
-    fill="#000000"
-    viewBox="-2.4 -2.4 28.80 28.80"
-    xmlns="http://www.w3.org/2000/svg"
-  >
+  <svg fill="#000000" viewBox="-2.4 -2.4 28.80 28.80" xmlns="http://www.w3.org/2000/svg">
     <g id="SVGRepo_bgCarrier" stroke-width="0">
-      <rect
-        x="-2.4"
-        y="-2.4"
-        width="28.80"
-        height="28.80"
-        rx="14.4"
-        fill="#f5f5f5"
-        strokewidth="0"
-      ></rect>
+      <rect x="-2.4" y="-2.4" width="28.80" height="28.80" rx="14.4" fill="#f5f5f5" strokewidth="0"></rect>
     </g>
-    <g
-      id="SVGRepo_tracerCarrier"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    ></g>
+    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
     <g id="SVGRepo_iconCarrier">
       <path d="M7.826 10.083a.784.784 0 0 0-.468-.175h-.701v4.198h.701a.786.786 0 0 0 .469-.175c.155-.117.233-.292.233-.525v-2.798c.001-.233-.079-.408-.234-.525zM19.236 3H4.764C3.791 3 3.002 3.787 3 4.76v14.48c.002.973.791 1.76 1.764 1.76h14.473c.973 0 1.762-.787 1.764-1.76V4.76A1.765 1.765 0 0 0 19.236 3zM9.195 13.414c0 .755-.466 1.901-1.942 1.898H5.389V8.665h1.903c1.424 0 1.902 1.144 1.903 1.899v2.85zm4.045-3.562H11.1v1.544h1.309v1.188H11.1v1.543h2.142v1.188h-2.498a.813.813 0 0 1-.833-.792V9.497a.813.813 0 0 1 .792-.832h2.539l-.002 1.187zm4.165 4.632c-.531 1.235-1.481.99-1.906 0l-1.548-5.818h1.309l1.193 4.569 1.188-4.569h1.31l-1.546 5.818z"></path>
     </g>

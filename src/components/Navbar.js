@@ -2,14 +2,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
-import {
-  MediumIcon,
-  DevIcon,
-  GithubIcon,
-  LinkedInIcon,
-  MoonIcon,
-  SunIcon,
-} from "./Icons";
+import { MediumIcon, DevIcon, GithubIcon, LinkedInIcon, MoonIcon, SunIcon, XIcon } from "./Icons";
 import { motion } from "framer-motion";
 import { useThemeSwitch } from "./Hooks/useThemeSwitch";
 
@@ -17,18 +10,13 @@ const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
 
   return (
-    <Link
-      href={href}
-      className={`${className}  rounded relative group lg:text-light lg:dark:text-dark`}
-    >
+    <Link href={href} className={`${className}  rounded relative group lg:text-light lg:dark:text-dark`}>
       {title}
       <span
         className={`
               inline-block h-[1px]  bg-dark absolute left-0 -bottom-0.5 
               group-hover:w-full transition-[width] ease duration-300 dark:bg-light
-              ${
-                router.asPath === href ? "w-full" : " w-0"
-              } lg:bg-light lg:dark:bg-dark
+              ${router.asPath === href ? "w-full" : " w-0"} lg:bg-light lg:dark:bg-dark
               `}
       >
         &nbsp;
@@ -46,18 +34,13 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
   };
 
   return (
-    <button
-      className={`${className}  rounded relative group lg:text-light lg:dark:text-dark`}
-      onClick={handleClick}
-    >
+    <button className={`${className}  rounded relative group lg:text-light lg:dark:text-dark`} onClick={handleClick}>
       {title}
       <span
         className={`
               inline-block h-[1px]  bg-dark absolute left-0 -bottom-0.5 
               group-hover:w-full transition-[width] ease duration-300 dark:bg-light
-              ${
-                router.asPath === href ? "w-full" : " w-0"
-              } lg:bg-light lg:dark:bg-dark
+              ${router.asPath === href ? "w-full" : " w-0"} lg:bg-light lg:dark:bg-dark
               `}
       >
         &nbsp;
@@ -80,29 +63,11 @@ const Navbar = () => {
     lg:px-16 relative z-1 md:px-12 sm:px-8
     "
     >
-      <button
-        type="button"
-        className=" flex-col items-center justify-center hidden lg:flex z-9"
-        aria-controls="mobile-menu"
-        aria-expanded={isOpen}
-        onClick={handleClick}
-      >
+      <button type="button" className=" flex-col items-center justify-center hidden lg:flex z-9" aria-controls="mobile-menu" aria-expanded={isOpen} onClick={handleClick}>
         <span className="sr-only">Open main menu</span>
-        <span
-          className={`bg-dark dark:bg-light block h-0.5 w-6 rounded-sm transition-all duration-300 ease-out ${
-            isOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"
-          }`}
-        ></span>
-        <span
-          className={`bg-dark dark:bg-light block h-0.5 w-6 rounded-sm transition-all duration-300 ease-out ${
-            isOpen ? "opacity-0" : "opacity-100"
-          } my-0.5`}
-        ></span>
-        <span
-          className={`bg-dark dark:bg-light block h-0.5 w-6 rounded-sm transition-all duration-300 ease-out ${
-            isOpen ? "-rotate-45 -translate-y-1" : "translate-y-0.5"
-          }`}
-        ></span>
+        <span className={`bg-dark dark:bg-light block h-0.5 w-6 rounded-sm transition-all duration-300 ease-out ${isOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"}`}></span>
+        <span className={`bg-dark dark:bg-light block h-0.5 w-6 rounded-sm transition-all duration-300 ease-out ${isOpen ? "opacity-0" : "opacity-100"} my-0.5`}></span>
+        <span className={`bg-dark dark:bg-light block h-0.5 w-6 rounded-sm transition-all duration-300 ease-out ${isOpen ? "-rotate-45 -translate-y-1" : "translate-y-0.5"}`}></span>
       </button>
 
       <div className="w-full flex justify-between items-center lg:hidden">
@@ -116,47 +81,19 @@ const Navbar = () => {
           className="flex items-center justify-center flex-wrap lg:mt-2
       "
         >
-          <motion.a
-            target={"_blank"}
-            className="w-7 mr-3"
-            href="https://github.com/lilxyzz"
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.9 }}
-            aria-label="Checkout my GitHub profile"
-          >
+          <motion.a target={"_blank"} className="w-7 mr-3" href="https://github.com/CreatoPro" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} aria-label="Checkout my GitHub profile">
             <GithubIcon />
           </motion.a>
 
-          <motion.a
-            target={"_blank"}
-            className="w-7 mx-3 bg-light rounded-full"
-            href="https://medium.com/@travis.lord"
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.9 }}
-            aria-label="Checkout my Medium profile"
-          >
-            <MediumIcon />
+          <motion.a target={"_blank"} className="w-7 mx-3 bg-light rounded-full" href="https://www.linkedin.com/in/shreesat/" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} aria-label="Checkout my LinkedIn profile">
+            <LinkedInIcon />
           </motion.a>
 
-          <motion.a
-            target={"_blank"}
-            className="w-7 mx-3"
-            href="https://dev.to/lilxyzz"
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.9 }}
-            aria-label="Checkout my Dev.to profile"
-          >
-            <DevIcon />
+          <motion.a target={"_blank"} className="w-7 mx-3" href="https://twitter.com/shreesatsahu" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} aria-label="Checkout my X profile">
+            <XIcon />
           </motion.a>
 
-          <motion.a
-            target={"_blank"}
-            className="w-7 mx-3"
-            href="https://dev.to/lilxyzz"
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.9 }}
-            aria-label="My Dev.to profile"
-          ></motion.a>
+          <motion.a target={"_blank"} className="w-7 mx-3" href="https://twitter.com/shreesatsahu" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} aria-label="My Twitter profile"></motion.a>
 
           <button
             onClick={() => setMode(mode === "light" ? "dark" : "light")}
@@ -165,11 +102,7 @@ const Navbar = () => {
             `}
             aria-label="theme-switcher"
           >
-            {mode === "light" ? (
-              <SunIcon className={"fill-dark"} />
-            ) : (
-              <MoonIcon className={"fill-dark"} />
-            )}
+            {mode === "light" ? <SunIcon className={"fill-dark"} /> : <MoonIcon className={"fill-dark"} />}
           </button>
         </nav>
       </div>
@@ -183,80 +116,29 @@ const Navbar = () => {
           animate={{ scale: 1, opacity: 1 }}
         >
           <nav className="flex items-center justify-center flex-col">
-            <CustomMobileLink
-              toggle={handleClick}
-              className="mr-4 lg:m-0 lg:my-2"
-              href="/"
-              title="Home"
-            />
-            <CustomMobileLink
-              toggle={handleClick}
-              className="mx-4 lg:m-0 lg:my-2"
-              href="/about"
-              title="About"
-            />
-            <CustomMobileLink
-              toggle={handleClick}
-              className="mx-4 lg:m-0 lg:my-2"
-              href="/projects"
-              title="Projects"
-            />
-            <CustomMobileLink
-              toggle={handleClick}
-              className="ml-4 lg:m-0 lg:my-2"
-              href="/articles"
-              title="Articles"
-            />
-            <CustomMobileLink
-              toggle={handleClick}
-              className="ml-4 lg:m-0 lg:my-2"
-              href="/contact"
-              title="Contact"
-            />
+            <CustomMobileLink toggle={handleClick} className="mr-4 lg:m-0 lg:my-2" href="/" title="Home" />
+            <CustomMobileLink toggle={handleClick} className="mx-4 lg:m-0 lg:my-2" href="/about" title="About" />
+            <CustomMobileLink toggle={handleClick} className="mx-4 lg:m-0 lg:my-2" href="/projects" title="Projects" />
+            <CustomMobileLink toggle={handleClick} className="ml-4 lg:m-0 lg:my-2" href="/articles" title="Articles" />
+            <CustomMobileLink toggle={handleClick} className="ml-4 lg:m-0 lg:my-2" href="/contact" title="Contact" />
           </nav>
           <nav
             className="flex items-center justify-center  mt-2
       "
           >
-            <motion.a
-              target={"_blank"}
-              className="w-6 mr-3"
-              href="https://github.com/lilxyzz"
-              whileHover={{ y: -2 }}
-              whileTap={{ scale: 0.9 }}
-              aria-label="Checkout my Github profile"
-            >
+            <motion.a target={"_blank"} className="w-7 mr-3" href="https://github.com/CreatoPro" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} aria-label="Checkout my GitHub profile">
               <GithubIcon />
             </motion.a>
 
-            <motion.a
-              target={"_blank"}
-              className="w-6 mx-3 bg-light rounded-full"
-              href="https://medium.com/@travis.lord"
-              whileHover={{ y: -2 }}
-              whileTap={{ scale: 0.9 }}
-              aria-label="Checkout my Medium profile"
-            >
-              <MediumIcon />
+            <motion.a target={"_blank"} className="w-7 mx-3 bg-light rounded-full" href="https://www.linkedin.com/in/shreesat/" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} aria-label="Checkout my LinkedIn profile">
+              <LinkedInIcon />
             </motion.a>
-            <motion.a
-              target={"_blank"}
-              className="w-6 mx-3"
-              href="https://dev.to/lilxyzz"
-              whileHover={{ y: -2 }}
-              whileTap={{ scale: 0.9 }}
-              aria-label="Checkout my Dev.to profile"
-            >
-              <DevIcon />
+
+            <motion.a target={"_blank"} className="w-7 mx-3" href="https://twitter.com/shreesatsahu" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} aria-label="Checkout my X profile">
+              <XIcon />
             </motion.a>
-            <motion.a
-              target={"_blank"}
-              className="w-6 mx-3"
-              href="https://dev.to/lilxyzz"
-              whileHover={{ y: -2 }}
-              whileTap={{ scale: 0.9 }}
-              aria-label="My Dev.to profile"
-            ></motion.a>
+
+            <motion.a target={"_blank"} className="w-7 mx-3" href="https://twitter.com/shreesatsahu" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} aria-label="My Twitter profile"></motion.a>
 
             <button
               onClick={() => setMode(mode === "light" ? "dark" : "light")}
@@ -265,11 +147,7 @@ const Navbar = () => {
             `}
               aria-label="theme-switcher"
             >
-              {mode === "light" ? (
-                <SunIcon className={"fill-dark"} />
-              ) : (
-                <MoonIcon className={"fill-dark"} />
-              )}
+              {mode === "light" ? <SunIcon className={"fill-dark"} /> : <MoonIcon className={"fill-dark"} />}
             </button>
           </nav>
         </motion.div>
