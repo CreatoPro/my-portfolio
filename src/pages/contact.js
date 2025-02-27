@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Layout from "@/components/Layout";
 import Head from "next/head";
 import AnimatedText from "@/components/AnimatedText";
 import TransitionEffect from "@/components/TransitionEffect";
 import { useRouter } from "next/router";
 import emailjs from "emailjs-com";
+import ReCAPTCHA from "react-google-recaptcha";
 
 // Netlify Form config
 
@@ -15,14 +16,18 @@ export default function About() {
     email: "",
     message: "",
   });
-
+  const recaptchaRef = useRef(null);
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    const token = recaptchaRef.current.getValue();
+    if (!token) {
+      alert("Please complete the CAPTCHA.");
+      return;
+    }
     try {
       const result = await emailjs.sendForm("service_nv1hmhm", "template_ku5wwrv", e.target, "lY7PlQB2acvsd1ZSf");
 
@@ -35,6 +40,7 @@ export default function About() {
     } catch (error) {
       console.error("An error occurred while sending the email:", error);
     }
+    recaptchaRef.current.reset();
   };
 
   return (
@@ -88,7 +94,9 @@ export default function About() {
                         <textarea name="message" id="message" required rows="4" className="mt-1 p-2 w-full border border-solid border-dark rounded-md bg-light dark:border-light dark:bg-dark dark:text-light" onChange={handleChange}></textarea>
                       </label>
                     </div>
-
+                    <div className="col-span-1 p-2" style={{ display: "flex", justifyContent: "flex-start" }}>
+                      <ReCAPTCHA ref={recaptchaRef} sitekey="6LfGE-QqAAAAAJmMmB3YjonwAZsAmPr_KpepWumm" style={{ transform: "scale(0.7)", transformOrigin: "left" }} />
+                    </div>
                     <div className="col-span-1 p-2">
                       <button
                         type="submit"
