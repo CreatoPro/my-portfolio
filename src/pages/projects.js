@@ -1,5 +1,5 @@
 import AnimatedText from "@/components/AnimatedText";
-import { GithubIcon } from "@/components/Icons";
+import { LinkArrow } from "@/components/Icons";
 import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
@@ -112,20 +112,30 @@ lg:p-8 xs:rounded-2xl  xs:rounded-br-3xl xs:p-4
         </Link>
         <p className=" my-2 rounded-md font-medium text-dark dark:text-light sm:text-sm">{summary}</p>
         <div className="mt-2 flex items-center">
-          <Link href={github} target={"_blank"} className="w-10" aria-label="github link">
-            <GithubIcon />
+          <Link
+            href={github}
+            target={"_blank"}
+            className="
+           flex items-center rounded-lg border-2 border-solid bg-light p-2.5 px-6 text-lg font-semibold
+            capitalize text-dark hover:border-light hover:bg-dark hover:text-light 
+            dark:bg-dark dark:text-light dark:hover:bg-light dark:hover:text-dark
+            md:p-2 md:px-4 md:text-base gap-1"
+            aria-label="Project link"
+          >
+            Link
+            <LinkArrow />
           </Link>
           <Link
             href={link}
-            className="ml-4 rounded-lg
-             bg-dark p-2 px-6 text-lg font-semibold
+            className="ml-4 
+              p-2 px-6 text-lg font-semibold
              sm:px-4 sm:text-base rounded-lg border-2 border-solid bg-dark
             capitalize text-light hover:border-dark hover:bg-transparent hover:text-dark 
             dark:bg-light dark:text-dark dark:hover:border-light dark:hover:bg-dark dark:hover:text-light
             md:p-2 md:px-4 md:text-base"
-            aria-label="Project link"
+            aria-label="Project Details"
           >
-            View Project
+            Project Details
           </Link>
         </div>
       </div>
@@ -170,15 +180,15 @@ const Project = ({ title, type, img, link, tools }) => {
           <Link
             href={link}
             className="rounded-lg
-             bg-dark mt-2 px-6 py-2 text-lg font-semibold
-             sm:px-4 sm:text-base rounded-lg border-2 border-solid bg-dark
+              mt-2 px-6 py-2 text-lg font-semibold
+             sm:px-4 sm:text-base  border-2 border-solid bg-dark
             capitalize text-light hover:border-dark hover:bg-transparent hover:text-dark 
             dark:bg-light dark:text-dark dark:hover:border-light dark:hover:bg-dark dark:hover:text-light
             md:p-2 md:px-4 md:text-base
             "
             aria-label={title}
           >
-            View Project
+            Project Details
           </Link>
         </div>
       </div>
@@ -190,39 +200,55 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Projects | By ShreesatPortfolio</title>
-        <meta name="description" content="ShreesatPortfolio, A open-source portfolio theme built with Nextjs" />
+        <title>Projects | By Shreesat</title>
+        <meta name="description" content="Shreesat's Projects" />
       </Head>
 
       <TransitionEffect />
       <main className={`mb-16  flex w-full flex-col items-center justify-center dark:text-light`}>
         <Layout className="pt-16">
-          <AnimatedText text="Imagination Transforms the World ✨" className="mb-16 !text-8xl !leading-tight lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl" />
+          <AnimatedText text="💡From Code to Creation - Bringing Ideas to Life!" className="mb-16 !text-8xl !leading-tight lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl" />
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
-                type="Design & Development"
-                tools="HTML | CSS | JavaScript | Gatsby"
-                title="Clay - Gatsby Theme"
-                summary="Image-centric Gatsby theme for publishers, portfolio, photographers blogs and more."
+                type="Frontend Development"
+                tools="Next.js | Bootstrap | Git"
+                title="Allen NExT"
+                summary="A platform designed for NEET aspirants, where experienced MBBS doctors mentor and teach students to help them excel in their medical entrance exams."
                 img={proj1}
                 date="2023"
                 link="/projects/clay-gatsby-theme"
-                github="https://travislord.xyz/projects/clay-gatsby-theme"
+                github="https://www.allennext.com/"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
-              <Project type="Design & Development" tools="HTML | CSS | JavaScript | Gatsby" title="Clay - Gatsby Theme" img={proj1} date="2023" link="/projects/clay-gatsby-theme" github="https://travislord.xyz/projects/clay-gatsby-theme" />
+              <Project type="Full Stack Devlopment" tools="React Native | MongoDB | NodeJs | AWS" title="Swap | Lend Faster" img={proj1} date="2023" link="/projects/clay-gatsby-theme" github="https://play.google.com/store/apps/details?id=com.shreesat.Swap&gl=in" />
             </div>
             <div className="col-span-6 sm:col-span-12">
-              <Project type="Design & Development" tools="HTML | CSS | JavaScript | Gatsby" title="Clay - Gatsby Theme" img={proj1} date="2023" link="/projects/clay-gatsby-theme" github="https://travislord.xyz/projects/clay-gatsby-theme" />
+              <Project type="E-Commerce Development" tools="Shopify" title="Allen Estore" img={proj1} date="2023" link="/projects/clay-gatsby-theme" github="https://estore.allen.ac.in/" />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project type="UX & Development" tools="REACT Js | Bootstrap" title="Allen Digital" img={proj1} date="2023" link="/projects/clay-gatsby-theme" github="https://digital.allen.ac.in/login" />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project type="Design & Development" tools="HTML | CSS | JavaScript | PHP" title="IIG Academy" img={proj1} date="2023" link="/projects/clay-gatsby-theme" github="https://iigacademy.com/" />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project type="Frontend Development" tools="Flutter" title="2050 Healthcare App" img={proj1} date="2023" link="/projects/clay-gatsby-theme" github="https://travislord.xyz/projects/clay-gatsby-theme" />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project type="Frontend Development" tools="React Native | AWS IVS" title="Allen Digital App (Depricated App)" img={proj1} date="2023" link="/projects/clay-gatsby-theme" github="" />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project type="Frontend Development" tools="Wordpress" title="IIG Varsity" img={proj1} date="2023" link="/projects/clay-gatsby-theme" github="https://www.iigvarsity.com/" />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project type="Frontend Development" tools="Wordpress" title="Sambit Hotels" img={proj1} date="2023" link="/projects/clay-gatsby-theme" github="https://sambitgroup.com/" />
             </div>
           </div>
 
           <div>
-            <ul className="flex flex-col items-center relative pt-16">
-              <Article title="Adding more soon, thanks for the interest!" img={loading} time="1 min read" date="" link="https://github.com/lilxyzz/" />
-            </ul>
+            <ul className="flex flex-col items-center relative pt-16">{/* <Article title="Adding more soon, thanks for the interest!" img={loading} time="1 min read" date="" link="https://github.com/lilxyzz/" /> */}</ul>
 
             <div className="mt-2 flex items-center justify-between gap-3 grid-cols-2">
               <Link
