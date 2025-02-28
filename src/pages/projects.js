@@ -8,6 +8,17 @@ import { useRef } from "react";
 import { HireMe2 } from "@/components/HireMe2";
 
 import proj1 from "../../public/images/projects/clay-theme.png";
+
+import allenNext from "../../public/images/projects/allen-next.png";
+import swap from "../../public/images/projects/swap.png";
+import dgcare from "../../public/images/projects/2050-dgcare.png";
+import allenDigital from "../../public/images/projects/allen-digital.png";
+import allenDigitalApp from "../../public/images/projects/allen-digital-app.png";
+import allenEstore from "../../public/images/projects/allen-estore.png";
+import iigAcademy from "../../public/images/projects/iig-academy.png";
+import iigVarsity from "../../public/images/projects/iig-varsity.png";
+import sambitGroup from "../../public/images/projects/sabit-group.png";
+
 import loading from "../../public/images/articles/GTA6-VICE.gif";
 
 import TransitionEffect from "@/components/TransitionEffect";
@@ -215,35 +226,35 @@ export default function Projects() {
                 tools="Next.js | Bootstrap | Git"
                 title="Allen NExT"
                 summary="A platform designed for NEET aspirants, where experienced MBBS doctors mentor and teach students to help them excel in their medical entrance exams."
-                img={proj1}
+                img={allenNext}
                 date="2023"
                 link="/projects/clay-gatsby-theme"
                 github="https://www.allennext.com/"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
-              <Project type="Full Stack Devlopment" tools="React Native | MongoDB | NodeJs | AWS" title="Swap | Lend Faster" img={proj1} date="2023" link="/projects/clay-gatsby-theme" github="https://play.google.com/store/apps/details?id=com.shreesat.Swap&gl=in" />
+              <Project type="Full Stack Devlopment" tools="React Native | MongoDB | NodeJs | AWS" title="Swap | Lend Faster" img={swap} date="2023" link="/projects/clay-gatsby-theme" github="https://play.google.com/store/apps/details?id=com.shreesat.Swap&gl=in" />
             </div>
             <div className="col-span-6 sm:col-span-12">
-              <Project type="E-Commerce Development" tools="Shopify" title="Allen Estore" img={proj1} date="2023" link="/projects/clay-gatsby-theme" github="https://estore.allen.ac.in/" />
+              <Project type="E-Commerce Development" tools="Shopify" title="Allen Estore" img={allenEstore} date="2023" link="/projects/clay-gatsby-theme" github="https://estore.allen.ac.in/" />
             </div>
             <div className="col-span-6 sm:col-span-12">
-              <Project type="UX & Development" tools="REACT Js | Bootstrap" title="Allen Digital" img={proj1} date="2023" link="/projects/clay-gatsby-theme" github="https://digital.allen.ac.in/login" />
+              <Project type="UX & Development" tools="REACT Js | Bootstrap" title="Allen Digital" img={allenDigital} date="2023" link="/projects/clay-gatsby-theme" github="https://digital.allen.ac.in/login" />
             </div>
             <div className="col-span-6 sm:col-span-12">
-              <Project type="Design & Development" tools="HTML | CSS | JavaScript | PHP" title="IIG Academy" img={proj1} date="2023" link="/projects/clay-gatsby-theme" github="https://iigacademy.com/" />
+              <Project type="Design & Development" tools="HTML | CSS | JavaScript | PHP" title="IIG Academy" img={iigAcademy} date="2023" link="/projects/clay-gatsby-theme" github="https://iigacademy.com/" />
             </div>
             <div className="col-span-6 sm:col-span-12">
-              <Project type="Frontend Development" tools="Flutter" title="2050 Healthcare App" img={proj1} date="2023" link="/projects/clay-gatsby-theme" github="https://travislord.xyz/projects/clay-gatsby-theme" />
+              <Project type="Frontend Development" tools="Flutter" title="2050 Healthcare App" img={dgcare} date="2023" link="/projects/clay-gatsby-theme" github="https://travislord.xyz/projects/clay-gatsby-theme" />
             </div>
             <div className="col-span-6 sm:col-span-12">
-              <Project type="Frontend Development" tools="React Native | AWS IVS" title="Allen Digital App (Depricated App)" img={proj1} date="2023" link="/projects/clay-gatsby-theme" github="" />
+              <Project type="Frontend Development" tools="React Native | AWS IVS" title="Allen Digital App (Depricated App)" img={allenDigitalApp} date="2023" link="/projects/clay-gatsby-theme" github="" />
             </div>
             <div className="col-span-6 sm:col-span-12">
-              <Project type="Frontend Development" tools="Wordpress" title="IIG Varsity" img={proj1} date="2023" link="/projects/clay-gatsby-theme" github="https://www.iigvarsity.com/" />
+              <Project type="Frontend Development" tools="Wordpress" title="IIG Varsity" img={iigVarsity} date="2023" link="/projects/clay-gatsby-theme" github="https://www.iigvarsity.com/" />
             </div>
             <div className="col-span-6 sm:col-span-12">
-              <Project type="Frontend Development" tools="Wordpress" title="Sambit Hotels" img={proj1} date="2023" link="/projects/clay-gatsby-theme" github="https://sambitgroup.com/" />
+              <Project type="Frontend Development" tools="Wordpress" title="Sambit Hotels" img={sambitGroup} date="2023" link="/projects/clay-gatsby-theme" github="https://sambitgroup.com/" />
             </div>
           </div>
 
