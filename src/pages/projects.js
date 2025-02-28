@@ -228,7 +228,7 @@ export default function Projects() {
                 summary="A platform designed for NEET aspirants, where experienced MBBS doctors mentor and teach students to help them excel in their medical entrance exams."
                 img={allenNext}
                 date="2023"
-                link="/projects/clay-gatsby-theme"
+                link={`/projects/allen-next`}
                 github="https://www.allennext.com/"
               />
             </div>

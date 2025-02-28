@@ -7,6 +7,7 @@ import Link from "next/link";
 import TransitionEffect from "@/components/TransitionEffect";
 import profilePic from "../../public/images/profile/Riley.png";
 import LatestXPost from "@/components/LatestXPost";
+import { Analytics } from "@vercel/analytics/next";
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
         <title>Shreesat Sahu's Portfolio</title>
         <meta name="description" content="Next Portfolio, A open-source portfolio theme built with Nextjs" />
       </Head>
-
+      <Analytics />
       <TransitionEffect />
       <article className={`flex min-h-screen items-center text-dark dark:text-light sm:items-start`}>
         <Layout className="!pt-24 md:!pt-16 sm:!pt-28">
