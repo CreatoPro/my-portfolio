@@ -233,28 +233,28 @@ export default function Projects() {
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
-              <Project type="Full Stack Devlopment" tools="React Native | MongoDB | NodeJs | AWS" title="Swap | Lend Faster" img={swap} date="2023" link="/projects/clay-gatsby-theme" github="https://play.google.com/store/apps/details?id=com.shreesat.Swap&gl=in" />
+              <Project type="Full Stack Devlopment" tools="React Native | MongoDB | NodeJs | AWS" title="Swap | Lend Faster" img={swap} date="2023" link="/projects/swap-lend-faster" github="https://play.google.com/store/apps/details?id=com.shreesat.Swap&gl=in" />
             </div>
             <div className="col-span-6 sm:col-span-12">
-              <Project type="E-Commerce Development" tools="Shopify" title="Allen Estore" img={allenEstore} date="2023" link="/projects/clay-gatsby-theme" github="https://estore.allen.ac.in/" />
+              <Project type="E-Commerce Development" tools="Shopify" title="Allen Estore" img={allenEstore} date="2023" link="/projects/allen-estore" github="https://estore.allen.ac.in/" />
             </div>
             <div className="col-span-6 sm:col-span-12">
-              <Project type="UX & Development" tools="REACT Js | Bootstrap" title="Allen Digital" img={allenDigital} date="2023" link="/projects/clay-gatsby-theme" github="https://digital.allen.ac.in/login" />
+              <Project type="UX & Development" tools="REACT Js | Bootstrap" title="Allen Digital" img={allenDigital} date="2023" link="/projects/allen-digital" github="https://digital.allen.ac.in/login" />
             </div>
             <div className="col-span-6 sm:col-span-12">
-              <Project type="Design & Development" tools="HTML | CSS | JavaScript | PHP" title="IIG Academy" img={iigAcademy} date="2023" link="/projects/clay-gatsby-theme" github="https://iigacademy.com/" />
+              <Project type="Design & Development" tools="HTML | CSS | JavaScript | PHP" title="IIG Academy" img={iigAcademy} date="2023" link="/projects/iig-academy" github="https://iigacademy.com/" />
             </div>
             <div className="col-span-6 sm:col-span-12">
-              <Project type="Frontend Development" tools="Flutter" title="2050 Healthcare App" img={dgcare} date="2023" link="/projects/clay-gatsby-theme" github="https://travislord.xyz/projects/clay-gatsby-theme" />
+              <Project type="Frontend Development" tools="Flutter" title="2050 Healthcare App" img={dgcare} date="2023" link="/projects/2050-healthcare-app" github="https://travislord.xyz/projects/2050-healthcare-app" />
             </div>
             <div className="col-span-6 sm:col-span-12">
-              <Project type="Frontend Development" tools="React Native | AWS IVS" title="Allen Digital App (Depricated App)" img={allenDigitalApp} date="2023" link="/projects/clay-gatsby-theme" github="" />
+              <Project type="Frontend Development" tools="React Native | AWS IVS" title="Allen Digital App (Depricated App)" img={allenDigitalApp} date="2023" link="/projects/allen-digital-app" github="" />
             </div>
             <div className="col-span-6 sm:col-span-12">
-              <Project type="Frontend Development" tools="Wordpress" title="IIG Varsity" img={iigVarsity} date="2023" link="/projects/clay-gatsby-theme" github="https://www.iigvarsity.com/" />
+              <Project type="Frontend Development" tools="Wordpress" title="IIG Varsity" img={iigVarsity} date="2023" link="/projects/iig-varsity" github="https://www.iigvarsity.com/" />
             </div>
             <div className="col-span-6 sm:col-span-12">
-              <Project type="Frontend Development" tools="Wordpress" title="Sambit Hotels" img={sambitGroup} date="2023" link="/projects/clay-gatsby-theme" github="https://sambitgroup.com/" />
+              <Project type="Frontend Development" tools="Wordpress" title="Sambit Hotels" img={sambitGroup} date="2023" link="/projects/sambit-hotels" github="https://sambitgroup.com/" />
             </div>
           </div>
 

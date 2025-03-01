@@ -89,20 +89,24 @@ export default function ProjectPage() {
               <p className="my-4">{project?.description2}</p>
 
               <div className="mt-2 flex items-center grid-cols-8 gap-4 sm:gap-8">
-                <Link
-                  className="
+                {!project?.link ? (
+                  <></>
+                ) : (
+                  <Link
+                    className="
               p-2 px-6 text-lg font-semibold
              sm:px-4 sm:text-base rounded-lg border-2 border-solid bg-dark
             capitalize text-light hover:border-dark hover:bg-transparent hover:text-dark 
             dark:bg-light dark:text-dark dark:hover:border-light dark:hover:bg-dark dark:hover:text-light
             md:p-2 md:px-4 md:text-base flex items-center gap-1"
-                  aria-label="Visit Theme Demo"
-                  href={project?.link}
-                  target={"_blank"}
-                >
-                  Visit Live
-                  <LinkArrow />
-                </Link>
+                    aria-label="Visit Theme Demo"
+                    href={project?.link}
+                    target={"_blank"}
+                  >
+                    Visit Live
+                    <LinkArrow />
+                  </Link>
+                )}
                 {/* <Link href="https://github.com/lilxyzz/clay-theme" target={"_blank"} className="w-10" aria-label="github link">
                   <GithubIcon />
                 </Link>
