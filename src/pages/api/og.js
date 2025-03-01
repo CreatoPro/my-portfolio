@@ -7,7 +7,7 @@ export const config = {
 
 export default function handler(req) {
   const { searchParams } = new URL(req.url);
-  const title = searchParams.get("title") || "Default Title";
+  const title = searchParams.get("title") || "Shreesat Sahu's Portfolio";
 
   return new ImageResponse(
     (
@@ -24,7 +24,7 @@ export default function handler(req) {
           fontWeight: "bold",
         }}
       >
-        {title}
+        Shreesat Sahu's Portfolio
       </div>
     ),
     {
