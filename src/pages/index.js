@@ -13,8 +13,35 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Shreesat Sahu's Portfolio</title>
-        <meta name="description" content="Next Portfolio, A open-source portfolio theme built with Nextjs" />
+        {/* Page Title */}
+        <title>Shreesat Sahu | Full-Stack Developer & Tech Enthusiast</title>
+
+        {/* Meta Description (for SEO) */}
+        <meta name="description" content="Shreesat Sahu's portfolio - A passionate full-stack developer and tech geek. Explore my projects, skills, and more." />
+
+        {/* Open Graph (OG) Meta Tags for Social Media (Facebook, LinkedIn) */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Shreesat Sahu | Full-Stack Developer & Tech Enthusiast" />
+        <meta property="og:description" content="Shreesat Sahu's portfolio - A passionate full-stack developer and tech geek. Explore my projects, skills, and more." />
+        <meta property="og:image" content="https://shreesat-sahu.vercel.app/og-image.jpg" />
+        <meta property="og:url" content="https://shreesat-sahu.vercel.app/" />
+        <meta property="og:site_name" content="Shreesat Sahu's Portfolio" />
+
+        {/* Twitter Card for Better Twitter Previews */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Shreesat Sahu | Full-Stack Developer & Tech Enthusiast" />
+        <meta name="twitter:description" content="Explore my projects, skills, and experiences as a passionate full-stack developer and tech geek." />
+        <meta name="twitter:image" content="https://shreesat-sahu.vercel.app/og-image.jpg" />
+        <meta name="twitter:creator" content="@shreesatsahu" />
+
+        {/* Canonical URL to Avoid Duplicate Content Issues */}
+        <link rel="canonical" href="https://shreesat-sahu.vercel.app/" />
+
+        {/* Favicon (Update Path as Needed) */}
+        <link rel="icon" href="/favicon.ico" />
+
+        {/* Robots Meta Tag for Indexing */}
+        <meta name="robots" content="index, follow" />
       </Head>
       <Analytics />
       <TransitionEffect />
