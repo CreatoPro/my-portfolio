@@ -2,10 +2,12 @@
 const nextConfig = {
   reactStrictMode: true,
 };
-
 module.exports = {
   async rewrites() {
-    return [{ source: "/sitemap.xml", destination: "/api/sitemap" }];
+    return [
+      { source: "/sitemap.xml", destination: "/api/sitemap" },
+      { source: "/sitemap-index.xml", destination: "/api/sitemap-index" },
+    ];
   },
 };
 
