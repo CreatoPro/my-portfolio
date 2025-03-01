@@ -108,7 +108,7 @@ export default function About() {
                 className="h-auto w-full rounded-2xl border-2 border-solid border-dark"
                 priority={true}
                 src={profile}
-                alt="Travis Lord"
+                alt="Shreesat Sahu"
                 sizes="(max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,
               33vw"

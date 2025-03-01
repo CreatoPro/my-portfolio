@@ -49,7 +49,7 @@ export default function Home() {
       <article className={`flex min-h-screen items-center text-dark dark:text-light sm:items-start`}>
         <Layout className="!pt-24 md:!pt-16 sm:!pt-28">
           <div className="flex w-full items-start justify-between md:flex-col pt-10 pb-24">
-            <div className="w-1/2 lg:hidden md:flex flex self-center max-h-fit">{<Image priority={true} src={profilePic} alt="image" className="h-auto w-100" height={340} width={340} sizes="33vw" />}</div>
+            <div className="w-1/2 lg:hidden md:flex flex self-center max-h-fit">{<Image priority={true} src={profilePic} alt="Shreesat Sahu" className="h-auto w-100" height={340} width={340} sizes="33vw" />}</div>
             <div className="flex w-1/2 flex-col items-center self-center lg:w-full lg:text-center">
               <AnimatedText text="Hey, I'm Shreesat" className="!text-left !text-6xl xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl" />
               <div className="flex w-full items-center lg:w-full lg:!justify-center sm:!justify-center md:!text-center md:inline-block md:w-full">
