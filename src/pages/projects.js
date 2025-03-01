@@ -19,8 +19,6 @@ import iigAcademy from "../../public/images/projects/iig-academy.png";
 import iigVarsity from "../../public/images/projects/iig-varsity.png";
 import sambitGroup from "../../public/images/projects/sabit-group.png";
 
-import loading from "../../public/images/articles/GTA6-VICE.gif";
-
 import TransitionEffect from "@/components/TransitionEffect";
 import { motion, useMotionValue } from "framer-motion";
 
@@ -263,7 +261,7 @@ export default function Projects() {
 
             <div className="mt-2 flex items-center justify-between gap-3 grid-cols-2">
               <Link
-                href="/articles/"
+                href="/videos/"
                 target={"_self"}
                 className={`flex items-center rounded-lg border-2 border-solid bg-light p-2.5 px-6 text-lg font-semibold
             capitalize text-dark hover:border-light hover:bg-dark hover:text-light 
@@ -271,7 +269,7 @@ export default function Projects() {
             md:p-2 md:px-4 md:text-base
              `}
               >
-                View Articles
+                My Life in Motion
               </Link>
               <Link
                 href="/about/"

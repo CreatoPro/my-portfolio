@@ -94,7 +94,7 @@ const Experience = () => {
           View Projects
         </Link>
         <Link
-          href="/articles/"
+          href="/videos/"
           target={"_self"}
           className={`flex items-center rounded-lg border-2 border-solid bg-dark p-2.5 px-6 text-lg font-semibold
             capitalize text-light hover:border-dark hover:bg-transparent hover:text-dark 
@@ -102,7 +102,7 @@ const Experience = () => {
             md:p-2 md:px-4 md:text-base
              `}
         >
-          View Articles
+          My Life in Motion
         </Link>
       </div>
     </div>
