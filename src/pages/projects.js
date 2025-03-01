@@ -222,7 +222,7 @@ export default function Projects() {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Projects | Shreesat Sahu" />
         <meta property="og:description" content="Check out innovative projects by Shreesat Sahu, built with modern web technologies like Next.js, React, and Node.js." />
-        <meta property="og:image" content="https://shreesat-sahu.vercel.app/default-og-image.jpg" />
+        <meta property="og:image" content="https://shreesat-sahu.vercel.app/api/og?title=Shreesat%20Sahu" />
         <meta property="og:url" content="https://shreesat-sahu.vercel.app/projects" />
         <meta property="og:site_name" content="Shreesat Sahu's Portfolio" />
 
@@ -230,7 +230,7 @@ export default function Projects() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Projects | Shreesat Sahu" />
         <meta name="twitter:description" content="Explore Shreesat Sahu’s portfolio projects, open-source work, and technical achievements in full-stack development." />
-        <meta name="twitter:image" content="https://shreesat-sahu.vercel.app/default-og-image.jpg" />
+        <meta name="twitter:image" content="https://shreesat-sahu.vercel.app/api/og?title=Shreesat%20Sahu" />
         <meta name="twitter:creator" content="@shreesatsahu" />
 
         {/* Robots Meta Tag for Indexing */}

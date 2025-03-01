@@ -61,7 +61,7 @@ export default function Articels() {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Videos | Shreesat Sahu's Portfolio" />
         <meta property="og:description" content="Check out the latest YouTube videos from Shreesat Sahu covering web development, tech, and vlogs." />
-        <meta property="og:image" content="https://shreesat-sahu.vercel.app/default-og-image.jpg" />
+        <meta property="og:image" content="https://shreesat-sahu.vercel.app/api/og?title=Shreesat%20Sahu" />
         <meta property="og:url" content="https://shreesat-sahu.vercel.app/videos" />
         <meta property="og:site_name" content="Shreesat Sahu's Portfolio" />
 
@@ -69,7 +69,7 @@ export default function Articels() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Videos | Shreesat Sahu's Portfolio" />
         <meta name="twitter:description" content="Explore the latest videos by Shreesat Sahu on YouTube. Stay updated with tech, web development, and personal vlogs." />
-        <meta name="twitter:image" content="https://shreesat-sahu.vercel.app/default-og-image.jpg" />
+        <meta name="twitter:image" content="https://shreesat-sahu.vercel.app/api/og?title=Shreesat%20Sahu" />
         <meta name="twitter:creator" content="@shreesatsahu" />
 
         {/* Robots Meta Tag for Indexing */}

@@ -22,7 +22,7 @@ const NotFound = () => {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="404 - Page Not Found | Shreesat Sahu's Portfolio" />
         <meta property="og:description" content="This page doesn't exist. Explore my projects and portfolio to learn more about my work." />
-        <meta property="og:image" content="https://shreesat-sahu.vercel.app/default-og-image.jpg" />
+        <meta property="og:image" content="https://shreesat-sahu.vercel.app/api/og?title=Shreesat%20Sahu" />
         <meta property="og:url" content="https://shreesat-sahu.vercel.app/404" />
         <meta property="og:site_name" content="Shreesat Sahu's Portfolio" />
 
@@ -30,7 +30,7 @@ const NotFound = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="404 - Page Not Found | Shreesat Sahu's Portfolio" />
         <meta name="twitter:description" content="Lost? Don't worry! Head back to the homepage and explore my portfolio." />
-        <meta name="twitter:image" content="https://shreesat-sahu.vercel.app/default-og-image.jpg" />
+        <meta name="twitter:image" content="https://shreesat-sahu.vercel.app/api/og?title=Shreesat%20Sahu" />
         <meta name="twitter:creator" content="@shreesatsahu" />
 
         {/* Robots Meta Tag (Prevents Indexing of the 404 Page) */}

@@ -21,7 +21,7 @@ export default function Thanks() {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Thank You | Shreesat Sahu's Portfolio" />
         <meta property="og:description" content="Thank you for getting in touch! I'll review your message and respond as soon as possible." />
-        <meta property="og:image" content="https://shreesat-sahu.vercel.app/default-og-image.jpg" />
+        <meta property="og:image" content="https://shreesat-sahu.vercel.app/api/og?title=Shreesat%20Sahu" />
         <meta property="og:url" content="https://shreesat-sahu.vercel.app/thank-you" />
         <meta property="og:site_name" content="Shreesat Sahu's Portfolio" />
 
@@ -29,7 +29,7 @@ export default function Thanks() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Thank You | Shreesat Sahu's Portfolio" />
         <meta name="twitter:description" content="I appreciate your message! I'll get back to you as soon as possible." />
-        <meta name="twitter:image" content="https://shreesat-sahu.vercel.app/default-og-image.jpg" />
+        <meta name="twitter:image" content="https://shreesat-sahu.vercel.app/api/og?title=Shreesat%20Sahu" />
         <meta name="twitter:creator" content="@shreesatsahu" />
 
         {/* Robots Meta Tag for Indexing */}

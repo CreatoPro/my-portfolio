@@ -79,7 +79,7 @@ export default function ProjectPage() {
         <meta property="og:type" content="article" />
         <meta property="og:title" content={`Shreesat Worked on this Project | ${project?.title}`} />
         <meta property="og:description" content={`Discover how I built ${project?.title} using modern web technologies. Check out the features and development insights.`} />
-        <meta property="og:image" content={project?.ogImage || "https://shreesat-sahu.vercel.app/default-og-image.jpg"} />
+        <meta property="og:image" content={project?.ogImage || "https://shreesat-sahu.vercel.app/api/og?title=Shreesat%20Sahu"} />
         <meta property="og:url" content={`https://shreesat-sahu.vercel.app/projects/${project?.slug}`} />
         <meta property="og:site_name" content="Shreesat Sahu's Portfolio" />
 
@@ -87,7 +87,7 @@ export default function ProjectPage() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={`Shreesat Worked on this Project | ${project?.title}`} />
         <meta name="twitter:description" content={`Learn more about ${project?.title}, a project I developed using cutting-edge technologies.`} />
-        <meta name="twitter:image" content={project?.ogImage || "https://shreesat-sahu.vercel.app/default-og-image.jpg"} />
+        <meta name="twitter:image" content={project?.ogImage || "https://shreesat-sahu.vercel.app/api/og?title=Shreesat%20Sahu"} />
         <meta name="twitter:creator" content="@shreesatsahu" />
 
         {/* Robots Meta Tag for Indexing */}
