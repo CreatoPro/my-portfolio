@@ -39,8 +39,35 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>About ShreesatPortfolio</title>
-        <meta name="description" content="ShreesatPortfolio, A open-source portfolio theme built with Nextjs" />
+        {/* Canonical URL to Avoid Duplicate Content Issues */}
+        <link rel="canonical" href="https://shreesat-sahu.vercel.app/about" />
+
+        {/* Page Title */}
+        <title>About | Shreesat Sahu's Portfolio</title>
+
+        {/* Meta Description (for SEO) */}
+        <meta name="description" content="Learn more about Shreesat Sahu and his open-source portfolio built with Next.js. Explore projects, skills, and experiences." />
+
+        {/* Open Graph (OG) Meta Tags for Social Media (Facebook, LinkedIn) */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="About | Shreesat Sahu's Portfolio" />
+        <meta property="og:description" content="Discover the story behind Shreesat Sahu's open-source portfolio theme built with Next.js. Explore his projects, skills, and experiences." />
+        <meta property="og:image" content="https://shreesat-sahu.vercel.app/default-og-image.jpg" />
+        <meta property="og:url" content="https://shreesat-sahu.vercel.app/about" />
+        <meta property="og:site_name" content="Shreesat Sahu's Portfolio" />
+
+        {/* Twitter Card for Better Twitter Previews */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About | Shreesat Sahu's Portfolio" />
+        <meta name="twitter:description" content="Learn more about Shreesat Sahu, a full-stack developer and tech enthusiast. Explore his work and open-source projects." />
+        <meta name="twitter:image" content="https://shreesat-sahu.vercel.app/default-og-image.jpg" />
+        <meta name="twitter:creator" content="@shreesatsahu" />
+
+        {/* Robots Meta Tag for Indexing */}
+        <meta name="robots" content="index, follow" />
+
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <TransitionEffect />

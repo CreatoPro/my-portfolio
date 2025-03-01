@@ -8,8 +8,35 @@ export default function Thanks() {
   return (
     <>
       <Head>
-        <title>Thank You | ShreesatPortfolio</title>
-        <meta name="description" content="Thank you for reaching out!" />
+        {/* Canonical URL to Avoid Duplicate Content Issues */}
+        <link rel="canonical" href="https://shreesat-sahu.vercel.app/thank-you" />
+
+        {/* Page Title */}
+        <title>Thank You | Shreesat Sahu's Portfolio</title>
+
+        {/* Meta Description (for SEO) */}
+        <meta name="description" content="Thank you for reaching out! I appreciate your message and will get back to you soon." />
+
+        {/* Open Graph (OG) Meta Tags for Social Media (Facebook, LinkedIn) */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Thank You | Shreesat Sahu's Portfolio" />
+        <meta property="og:description" content="Thank you for getting in touch! I'll review your message and respond as soon as possible." />
+        <meta property="og:image" content="https://shreesat-sahu.vercel.app/default-og-image.jpg" />
+        <meta property="og:url" content="https://shreesat-sahu.vercel.app/thank-you" />
+        <meta property="og:site_name" content="Shreesat Sahu's Portfolio" />
+
+        {/* Twitter Card for Better Twitter Previews */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Thank You | Shreesat Sahu's Portfolio" />
+        <meta name="twitter:description" content="I appreciate your message! I'll get back to you as soon as possible." />
+        <meta name="twitter:image" content="https://shreesat-sahu.vercel.app/default-og-image.jpg" />
+        <meta name="twitter:creator" content="@shreesatsahu" />
+
+        {/* Robots Meta Tag for Indexing */}
+        <meta name="robots" content="noindex, follow" />
+
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <TransitionEffect />

@@ -9,8 +9,37 @@ const NotFound = () => {
   return (
     <>
       <Head>
-        <title>Awesome Portfolio Built with Nextjs | 404 Page </title>
+        {/* Canonical URL to Avoid Duplicate Content Issues */}
+        <link rel="canonical" href="https://shreesat-sahu.vercel.app/404" />
+
+        {/* Page Title */}
+        <title>404 - Page Not Found | Shreesat Sahu's Portfolio</title>
+
+        {/* Meta Description (for SEO) */}
+        <meta name="description" content="Oops! The page you're looking for doesn't exist. Return to the homepage and explore Shreesat Sahu's portfolio." />
+
+        {/* Open Graph (OG) Meta Tags for Social Media (Facebook, LinkedIn) */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="404 - Page Not Found | Shreesat Sahu's Portfolio" />
+        <meta property="og:description" content="This page doesn't exist. Explore my projects and portfolio to learn more about my work." />
+        <meta property="og:image" content="https://shreesat-sahu.vercel.app/default-og-image.jpg" />
+        <meta property="og:url" content="https://shreesat-sahu.vercel.app/404" />
+        <meta property="og:site_name" content="Shreesat Sahu's Portfolio" />
+
+        {/* Twitter Card for Better Twitter Previews */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="404 - Page Not Found | Shreesat Sahu's Portfolio" />
+        <meta name="twitter:description" content="Lost? Don't worry! Head back to the homepage and explore my portfolio." />
+        <meta name="twitter:image" content="https://shreesat-sahu.vercel.app/default-og-image.jpg" />
+        <meta name="twitter:creator" content="@shreesatsahu" />
+
+        {/* Robots Meta Tag (Prevents Indexing of the 404 Page) */}
+        <meta name="robots" content="noindex, follow" />
+
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <TransitionEffect />
       <main className="h-[100vh] w-full dark:bg-dark ">
         <Layout className="relative !bg-transparent !pt-16 flex flex-col items-center justify-center">

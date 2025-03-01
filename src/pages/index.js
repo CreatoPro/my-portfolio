@@ -23,7 +23,7 @@ export default function Home() {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Shreesat Sahu | Full-Stack Developer & Tech Enthusiast" />
         <meta property="og:description" content="Shreesat Sahu's portfolio - A passionate full-stack developer and tech geek. Explore my projects, skills, and more." />
-        <meta property="og:image" content="https://shreesat-sahu.vercel.app/og-image.jpg" />
+        <meta property="og:image" content="https://shreesat-sahu.vercel.app/api/og?title=My%20Dynamic%20OG%20Image" />
         <meta property="og:url" content="https://shreesat-sahu.vercel.app/" />
         <meta property="og:site_name" content="Shreesat Sahu's Portfolio" />
 
@@ -31,7 +31,7 @@ export default function Home() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Shreesat Sahu | Full-Stack Developer & Tech Enthusiast" />
         <meta name="twitter:description" content="Explore my projects, skills, and experiences as a passionate full-stack developer and tech geek." />
-        <meta name="twitter:image" content="https://shreesat-sahu.vercel.app/og-image.jpg" />
+        <meta name="twitter:image" content="https://shreesat-sahu.vercel.app/api/og?title=My%20Dynamic%20OG%20Image" />
         <meta name="twitter:creator" content="@shreesatsahu" />
 
         {/* Canonical URL to Avoid Duplicate Content Issues */}

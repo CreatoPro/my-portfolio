@@ -46,8 +46,35 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>Shreesat Sahu's Portfolio</title>
-        <meta name="description" content="ShreesatPortfolio, A open-source portfolio theme built with Nextjs" />
+        {/* Canonical URL to Avoid Duplicate Content Issues */}
+        <link rel="canonical" href="https://shreesat-sahu.vercel.app/" />
+
+        {/* Page Title */}
+        <title>Shreesat Sahu | Full-Stack Developer & Tech Enthusiast</title>
+
+        {/* Meta Description (for SEO) */}
+        <meta name="description" content="Welcome to Shreesat Sahu's portfolio – A full-stack developer and tech enthusiast. Explore my open-source projects, skills, and experiences." />
+
+        {/* Open Graph (OG) Meta Tags for Social Media (Facebook, LinkedIn) */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Shreesat Sahu | Full-Stack Developer & Tech Enthusiast" />
+        <meta property="og:description" content="Discover Shreesat Sahu's work as a full-stack developer. Explore open-source projects, technical blogs, and contributions to the tech community." />
+        <meta property="og:image" content="https://shreesat-sahu.vercel.app/default-og-image.jpg" />
+        <meta property="og:url" content="https://shreesat-sahu.vercel.app/" />
+        <meta property="og:site_name" content="Shreesat Sahu's Portfolio" />
+
+        {/* Twitter Card for Better Twitter Previews */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Shreesat Sahu | Full-Stack Developer & Tech Enthusiast" />
+        <meta name="twitter:description" content="Check out my portfolio! I build innovative projects using Next.js, React, and modern web technologies." />
+        <meta name="twitter:image" content="https://shreesat-sahu.vercel.app/default-og-image.jpg" />
+        <meta name="twitter:creator" content="@shreesatsahu" />
+
+        {/* Robots Meta Tag for Indexing */}
+        <meta name="robots" content="index, follow" />
+
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <TransitionEffect />

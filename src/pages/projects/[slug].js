@@ -66,9 +66,38 @@ export default function ProjectPage() {
   return (
     <>
       <Head>
-        <link rel="canonical" href="/"></link>
-        <title>Shreesat Worked on this Project | {project?.title} </title>
-        <meta name="description" content="I am thrilled to share Clay Theme with the web development community! I have recently launched Clay Theme, a cutting-edge Gatsby Framework Template." />
+        {/* Canonical URL to Avoid Duplicate Content Issues */}
+        <link rel="canonical" href="https://shreesat-sahu.vercel.app/projects/{project?.slug}" />
+
+        {/* Page Title */}
+        <title>Shreesat Worked on this Project | {project?.title}</title>
+
+        {/* Meta Description (for SEO) */}
+        <meta name="description" content={`Explore the details of ${project?.title} - a project I worked on using modern web technologies. Learn more about the development process and features.`} />
+
+        {/* Open Graph (OG) Meta Tags for Social Media (Facebook, LinkedIn) */}
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content={`Shreesat Worked on this Project | ${project?.title}`} />
+        <meta property="og:description" content={`Discover how I built ${project?.title} using modern web technologies. Check out the features and development insights.`} />
+        <meta property="og:image" content={project?.ogImage || "https://shreesat-sahu.vercel.app/default-og-image.jpg"} />
+        <meta property="og:url" content={`https://shreesat-sahu.vercel.app/projects/${project?.slug}`} />
+        <meta property="og:site_name" content="Shreesat Sahu's Portfolio" />
+
+        {/* Twitter Card for Better Twitter Previews */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={`Shreesat Worked on this Project | ${project?.title}`} />
+        <meta name="twitter:description" content={`Learn more about ${project?.title}, a project I developed using cutting-edge technologies.`} />
+        <meta name="twitter:image" content={project?.ogImage || "https://shreesat-sahu.vercel.app/default-og-image.jpg"} />
+        <meta name="twitter:creator" content="@shreesatsahu" />
+
+        {/* Robots Meta Tag for Indexing */}
+        <meta name="robots" content="index, follow" />
+
+        {/* Google Site Verification */}
+        <meta name="google-site-verification" content="nLSM6d-tIBbavR-eejEMQ0Hh4fyATMWCcMbQbmvb6o8" />
+
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <TransitionEffect />

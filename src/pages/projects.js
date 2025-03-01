@@ -209,8 +209,35 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Projects | By Shreesat</title>
-        <meta name="description" content="Shreesat's Projects" />
+        {/* Canonical URL to Avoid Duplicate Content Issues */}
+        <link rel="canonical" href="https://shreesat-sahu.vercel.app/projects" />
+
+        {/* Page Title */}
+        <title>Projects | Shreesat Sahu</title>
+
+        {/* Meta Description (for SEO) */}
+        <meta name="description" content="Explore projects by Shreesat Sahu – A full-stack developer and tech enthusiast. Check out open-source contributions, web applications, and more." />
+
+        {/* Open Graph (OG) Meta Tags for Social Media (Facebook, LinkedIn) */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Projects | Shreesat Sahu" />
+        <meta property="og:description" content="Check out innovative projects by Shreesat Sahu, built with modern web technologies like Next.js, React, and Node.js." />
+        <meta property="og:image" content="https://shreesat-sahu.vercel.app/default-og-image.jpg" />
+        <meta property="og:url" content="https://shreesat-sahu.vercel.app/projects" />
+        <meta property="og:site_name" content="Shreesat Sahu's Portfolio" />
+
+        {/* Twitter Card for Better Twitter Previews */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Projects | Shreesat Sahu" />
+        <meta name="twitter:description" content="Explore Shreesat Sahu’s portfolio projects, open-source work, and technical achievements in full-stack development." />
+        <meta name="twitter:image" content="https://shreesat-sahu.vercel.app/default-og-image.jpg" />
+        <meta name="twitter:creator" content="@shreesatsahu" />
+
+        {/* Robots Meta Tag for Indexing */}
+        <meta name="robots" content="index, follow" />
+
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <TransitionEffect />
