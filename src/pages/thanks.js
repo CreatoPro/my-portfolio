@@ -20,7 +20,7 @@ export default function Thanks() {
           <p className="text-lg sm:text-base text-dark/75 dark:text-light/75">I appreciate your message. I'll get back to you as soon as possible!</p>
 
           <div className="mt-8">
-            <Link href="/" className="px-6 py-3 font-bold capitalize  bg-dark border border-solid border-dark dark:border-light dark:bg-light rounded-md hover:bg-transparent text-dark dark:hover:text-light dark:hover:bg-dark dark:hover:border-light">
+            <Link href="/" className="px-6 py-3 font-bold capitalize  bg-light border border-solid border-dark dark:border-light dark:bg-light rounded-md hover:bg-dark text-dark dark:hover:text-light dark:hover:bg-dark dark:hover:border-light hover:text-light">
               Back to Home
             </Link>
           </div>
