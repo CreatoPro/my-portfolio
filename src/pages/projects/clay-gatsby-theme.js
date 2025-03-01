@@ -154,3 +154,18 @@
 //     </>
 //   );
 // }
+import Head from "next/head";
+
+const ClayGatsbyTheme = () => {
+  return (
+    <>
+      <Head>
+        <meta name="robots" content="noindex, nofollow" />
+        <title>Clay Gatsby Theme</title>
+      </Head>
+      <div>Clay Gatsby Theme Page</div>
+    </>
+  );
+};
+
+export default ClayGatsbyTheme;
