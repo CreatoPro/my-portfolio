@@ -42,6 +42,7 @@ export default function Home() {
 
         {/* Robots Meta Tag for Indexing */}
         <meta name="robots" content="index, follow" />
+        <meta name="google-site-verification" content="nLSM6d-tIBbavR-eejEMQ0Hh4fyATMWCcMbQbmvb6o8" />
       </Head>
       <Analytics />
       <TransitionEffect />
