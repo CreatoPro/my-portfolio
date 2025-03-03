@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import TransitionEffect from "@/components/TransitionEffect";
 import profilePic from "../../public/images/profile/Riley.png";
-import LatestXPost from "@/components/LatestXPost";
+// import LatestXPost from "../../public/";
 import { Analytics } from "@vercel/analytics/next";
 
 export default function Home() {
@@ -37,7 +37,6 @@ export default function Home() {
         {/* Canonical URL to Avoid Duplicate Content Issues */}
         <link rel="canonical" href="https://shreesat-sahu.vercel.app/" />
 
-        {/* Favicon (Update Path as Needed) */}
         <link rel="icon" href="/favicon.ico" />
 
         {/* Robots Meta Tag for Indexing */}
