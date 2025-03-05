@@ -6,6 +6,8 @@ import Image from "next/image";
 import Link from "next/link";
 import TransitionEffect from "@/components/TransitionEffect";
 import profilePic from "../../public/images/profile/Riley.png";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 // import LatestXPost from "../../public/";
 import { Analytics } from "@vercel/analytics/next";
 
@@ -44,6 +46,7 @@ export default function Home() {
         <meta name="google-site-verification" content="nLSM6d-tIBbavR-eejEMQ0Hh4fyATMWCcMbQbmvb6o8" />
       </Head>
       <Analytics />
+      <SpeedInsights />
       <TransitionEffect />
       <article className={`flex min-h-screen items-center text-dark dark:text-light sm:items-start`}>
         <Layout className="!pt-24 md:!pt-16 sm:!pt-28">
