@@ -67,7 +67,7 @@ export default function ProjectPage() {
     <>
       <Head>
         {/* Canonical URL to Avoid Duplicate Content Issues */}
-        <link rel="canonical" href="https://shreesat-sahu.vercel.app/projects/{project?.slug}" />
+        <link rel="canonical" href={`https://shreesat-sahu.vercel.app/projects/${project?.slug}`} />
 
         {/* Page Title */}
         <title>Shreesat Worked on this Project | {project?.title}</title>
@@ -112,7 +112,7 @@ export default function ProjectPage() {
             >
               <h2 className="mb-4 text-2xl font-bold capitalize text-dark/75 dark:text-light/75">{project?.work}</h2>
               <h3 className="mb-4 text-lg font-bold  text-lightGreen dark:text-primaryDark">{project?.tools}</h3>
-              <div classNname="w-full border-2 border-solid border-light bg-light"></div>
+               <div className="w-full border-2 border-solid border-light bg-light"></div>
               <p className="">{project?.description}</p>
               <h4 className="mt-4 text-lg font-800 capitalize text-dark/75 dark:text-light/75">{project?.freaturedLine}</h4>
               <p className="my-4">{project?.description2}</p>

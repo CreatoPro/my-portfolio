@@ -2,7 +2,10 @@
 const nextConfig = {
   reactStrictMode: true,
 };
+const siteUrl = "https://shreesat-sahu.vercel.app";
 module.exports = {
+  trailingSlash: true,
+  env: { SITE_URL: siteUrl },
   async rewrites() {
     return [
       { source: "/sitemap.xml", destination: "/api/sitemap" },
