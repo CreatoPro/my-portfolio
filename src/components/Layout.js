@@ -1,4 +1,5 @@
 import React from "react";
+import FloatingChat from "./FloatingChat";
 
 const Layout = ({ children, className = "" }) => {
   return (
@@ -7,6 +8,7 @@ const Layout = ({ children, className = "" }) => {
       md:p-12 sm:p-8 ${className}`}
     >
       {children}
+      <FloatingChat />
     </div>
   );
 };
